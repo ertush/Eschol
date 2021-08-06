@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+
+
+@layer base{
+     
+       
+    @font-face {
+        font-family: Poppins;
+        font-weight: 100;
+        src: url(../assets/fonts/poppins-v15-latin/poppins-v15-latin-200.woff) format("woff");
+      }
+
+      @font-face {
+        font-family: Poppins;
+        font-weight: 200;
+        src: url(../assets/fonts/poppins-v15-latin/poppins-v15-latin-200.woff) format("woff");
+      }
+
+      @font-face {
+        font-family: Poppins;
+        font-weight: 300;
+        src: url(../assets/fonts/poppins-v15-latin/poppins-v15-latin-300.woff) format("woff");
+      }
+
+      @font-face {
+        font-family: Poppins;
+        font-weight: 400;
+        src: url(../assets/fonts/poppins-v15-latin/poppins-v15-latin-regular.woff) format("woff");
+      }
+
+      @font-face {
+        font-family: Poppins;
+        font-weight: 500;
+        src: url(../assets/fonts/poppins-v15-latin/poppins-v15-latin-500.woff) format("woff");
+      }
+
+      @font-face {
+        font-family: Poppins;
+        font-weight: 600;
+        src: url(../assets/fonts/poppins-v15-latin/poppins-v15-latin-600.woff) format("woff");
+      }
+
+      
+      @font-face {
+        font-family: Poppins;
+        font-weight: 700;
+        src: url(../assets/fonts/poppins-v15-latin/poppins-v15-latin-700.woff) format("woff");
+      }
+
+      @font-face {
+        font-family: Poppins;
+        font-weight: 800;
+        src: url(../assets/fonts/poppins-v15-latin/poppins-v15-latin-800.woff) format("woff");
+      }
+
+      @font-face {
+        font-family: Poppins;
+        font-weight: 900;
+        src: url(../assets/fonts/poppins-v15-latin/poppins-v15-latin-900.woff) format("woff");
+      }
+
+      @layer components{
+        /* Nav Styles */
+        .link-menu {
+            @apply
+            capitalize
+            text-lg
+            font-normal
+            text-primary
+            hover:scale-110
+            transform
+            transition
+            duration-200
+            ease-out
+            md:border-b-2 border-secondary hover:border-none
+        }
+
+        /*  */
+
+      }
+
+      :root{
+          font-family: 'Poppins';
+          @apply box-border
+          h-screen
+          bg-white
+          m-0
+          p-0
+
+      }
+   
+
+}
+
+
+
+
+
+
