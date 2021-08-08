@@ -80,10 +80,10 @@
 
       }
 
-      :root{
+      :root{  
           font-family: 'Poppins';
           @apply box-border
-          h-screen
+          h-auto
           bg-white
           m-0
           p-0
