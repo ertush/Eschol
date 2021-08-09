@@ -62,6 +62,7 @@
 
       @layer components{
         /* Nav Styles */
+         /* hover for link-menu color can be bg-secondary or bg-gray-400  */
         .link-menu {
             @apply
             capitalize
@@ -73,7 +74,7 @@
             transition
             duration-200
             ease-out
-            md:border-b-2 border-secondary hover:border-none
+            md:border-b-2 border-gray-400 hover:border-none  
         }
 
         /*  */

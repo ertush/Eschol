@@ -1,11 +1,12 @@
 import Image from "next/image"
 import bgImage from "../assets/images/bg-city.jpg"
 import NavHeader from "./NavHeader";
+import {useRouter} from "next/router"
 
 
 function Header() {
  
-
+  const router = useRouter()
   return (
     <div className="w-full h-auto ">
       {/* nav-menu */}
@@ -37,11 +38,11 @@ function Header() {
 
           
             <div className="w-full h-auto flex justify-around mt-5 md:w-1/2 md:flex md:items-center md:justify-around">
-              <button onClick={() => {console.log('Go to products page')}} className="p-3 border-2 border-gray-200 rounded-lg text-gray-200 w-30 hover:bg-gray-200 hover:text-primary">
+              <button onClick={() => router.push('/products')} className="p-3 border-2 border-gray-200 rounded-lg text-gray-200 w-30 hover:bg-gray-200 hover:text-primary">
                 Our Products
               </button>
 
-              <button  onClick={() => {console.log('Go to about page')}} className="p-3 bg-secondary rounded-lg w-30 hover:bg-primary hover:text-secondary">
+              <button  onClick={() => router.push('/about')} className="p-3 bg-secondary rounded-lg w-30 hover:bg-primary hover:text-secondary">
                 Learn More
               </button>
             </div>

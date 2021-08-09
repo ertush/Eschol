@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { useState } from "react";
-import logo from "../assets/images/escl-logo-no-bg-theme.png"
+import logo from "../assets/images/escl-logo-no-bg-primary.png"
 import { XIcon, MenuIcon } from "@heroicons/react/solid"
 import Nav from "./Nav";
 
@@ -29,7 +29,8 @@ function NavHeader() {
           </div>
 
           <a href="/" className="text-xl font-semibold text-primary hidden md:inline flex-grow">
-            Eschol <span className="text-secondary">Ventures</span>
+           {/* Ventures color can be text-secondary or text-gray-400  */}
+            Eschol <span className="text-gray-400">Ventures</span>
           </a>
 
           <div className="hidden md:inline-flex space-x-10 pr-3">
@@ -37,7 +38,8 @@ function NavHeader() {
           </div>
 
           <a href="/" className="text-xl font-semibold text-primary md:hidden">
-            Eschol <span className="text-secondary">Ventures</span>
+          {/* Ventures color can be text-secondary or text-gray-400  */}
+            Eschol <span className="text-gray-400">Ventures</span> 
           </a>
 
            {

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { useState } from "react";
-import logo from "../assets/images/escl-logo-no-bg-theme.png";
-import { ArrowDownIcon, ArrowRightIcon } from "@heroicons/react/solid";
+import logo from "../assets/images/escl-logo-no-bg-white.png";
+import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/solid";
 
 function Footer() {
-  const [isDropDownContact, setIsDropDownContact] = useState(false);
-  const [isDropDownSF, setIsDropDownSF] = useState(false);
+  const [isDropDownContact, setIsDropDownContact] = useState(true);
+  const [isDropDownSF, setIsDropDownSF] = useState(true);
 
   return (
     <div className="flex flex-col h-auto w-full bg-primary ">
@@ -21,9 +21,9 @@ function Footer() {
           >
             Sectors Funded
             {isDropDownSF ? (
-              <ArrowRightIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
+              <ChevronRightIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
             ) : (
-              <ArrowDownIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
+              <ChevronDownIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
             )}
           </span>
 
@@ -61,16 +61,16 @@ function Footer() {
           >
             Contact us
             {isDropDownContact ? (
-              <ArrowRightIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
+              <ChevronRightIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
             ) : (
-              <ArrowDownIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
+              <ChevronDownIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
             )}
           </span>
 
           <ul
             className={`${
               isDropDownContact ? "hidden" : ""
-            } text-center md:text-left list-none gap-y-2`}
+            } text-center md:text-left  md:flex md:flex-col list-none gap-y-2`}
           >
             <li>
               <p className="text-md font-thin text-secondary">
@@ -81,7 +81,6 @@ function Footer() {
               <p className="text-md font-thin text-secondary">+254 705497588</p>
             </li>
             <li>
-              {" "}
               <p className="text-md font-thin text-secondary">
                 Consolata.Ndungu@escholventures.co.ke
               </p>
@@ -180,7 +179,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="w-[90%] rounded h-[1px] bg-secondary mx-auto md:w-full "></div>
+      <div className="w-[90%] rounded h-[1px] bg-secondary mx-auto md:hidden "></div>
       <span className="text-md mx-4 font-thin text-secondary md:mx-auto my-4 text-center">
         {" "}
         Eschol Ventures ltd All Rights Reserved &copy;{" "}
