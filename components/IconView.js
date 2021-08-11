@@ -9,7 +9,7 @@ function IconView({ img, title, description, cardStyles }) {
           {title}
         </h5>
       <div className="relative w-auto h-auto mb-4">
-               <Hexagon w={'w-60'} h={'h-60  text-[#384572]'} isImage={false} objectFit="fill"/> 
+               <Hexagon w={'w-60'} h={'h-60  text-[#384572]'} isText={false} isImage={false} objectFit="fill"/> 
                {img} 
        </div>
 
