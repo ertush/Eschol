@@ -1,15 +1,14 @@
-// import Image from "next/image";
-import Hexagon from "./Hexagon";
+import {HexagonAlt} from "./Hexagon";
 
 function IconView({ img, title, description, cardStyles }) {
   return (
-    <div className={cardStyles.concat("flex w-[90%] h-auto flex-col items-center md:mx-7 bg-secondary p-7 shadow-2xl rounded-xl md:w-[24%] md:m-0 md:p-5 md:scale-105 md:h-[530px] md:transform md:transition md:duration-200 md:ease-out")}>
+    <div className={cardStyles.concat("flex w-[90%] h-auto flex-col items-center md:mx-7 bg-secondary p-7 shadow-2xl rounded-xl md:shadow-none md:bg-transparent md:w-[24%] md:m-0 md:p-5 md:scale-105 md:h-[530px] md:transform md:transition md:duration-200 md:ease-out")}>
    
         <h5 className="text-lg font-semibold text-primary capitalize text-center">
           {title}
         </h5>
       <div className="relative w-auto h-auto mb-4">
-               <Hexagon w={'w-60'} h={'h-60  text-[#384572]'} isText={false} isImage={false} objectFit="fill"/> 
+               <HexagonAlt w={'w-60'} h={'h-60  text-[#384572]'} isText={false} isImage={false} objectFit="fill"/> 
                {img} 
        </div>
 

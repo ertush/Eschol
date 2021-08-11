@@ -1,5 +1,6 @@
-import NavHeader from "../components/NavHeader";
+import NavHeader from "../components/NavHeader"
 import Footer from "../components/Footer"
+import Heading from "../components/Heading"
 import Image from 'next/image'
 import growthCapitalImg from '../assets/images/growth-capital.jpeg'
 import IPOImage from '../assets/images/IPO-rsz.jpg'
@@ -8,10 +9,13 @@ import refinancingImage from '../assets/images/refinancing-rsz.jpg'
 import impactFinancingImage from '../assets/images/impact-financing-rsz.jpg'
 import projectFinancingImage from '../assets/images/project-financing-rsz.jpg'
 import ProductView from '../components/ProductView'
+import bgImage from '../assets/images/kicc.jpg'
 
 
 
 function Products() {
+
+    
 
     const productViewData = [
         {
@@ -33,7 +37,7 @@ function Products() {
             text: 'company refinancing',
             imageStyle:'rounded-r-full',
             gradientStyle:'bg-gradient-to-r from-secondary to-transparent left-0'
-        },
+        },  
         {
             id:3,
             name:'IPO-image',
@@ -77,16 +81,91 @@ function Products() {
         
     ]
 
+    const productViewDataAlt = [productViewData[0], productViewData[2], productViewData[4], productViewData[1], productViewData[3], productViewData[5]];
+
     return (
         <div className="h-auto w-full bg-secondary">
         {/* Header */}
         <NavHeader />
 
+        
+        {/* Heading */}
+
+        <Heading content={
+        (
+          <>
+              <div className="text-center md:w-1/2">
+              <h2 className="mb-2 text-3xl md:text-5xl md:my-10 font-bold capitalize text-primary md:text-gray-200">
+                <span className="text-secondary md:text-gray-400">Our</span> Products
+              </h2>
+              <span className="text-md font-semibold md:text-lg text-gray-200">
+                Our  products range from Corporate Funding, Retail Loans, Promoter Funding, 
+                International Funding, Project Funding, Loan Restructuring 
+                Subsidies, to Private Equity & Venture Capital.
+              </span>
+            </div>
+
+          </>
+        )
+      }
+        h={'h-[300px] md:h-[400px]'}
+        bgImage={bgImage}
+        contentSpacing={"gap-y-8 md:gap-y-8"}
+        hImage={' h-auto md:h-full'}
+      />
+
+        {/* End Heading */}
+
+
         {/* Products Section */}
-        <h3>Products</h3>
-        <div className="flex flex-col justify-center items-center w-[80%] mx-auto h-auto space-y-10 pb-10">
+
+
+        <div className="flex flex-col justify-center items-center w-[80%] pt-6 mx-auto h-auto space-y-10 pb-10 md:hidden">
         {
+
+
             productViewData.map(({id, hexaPosition, isText, imageStyle, isImage, text, name, gradientStyle}) => {
+                const image = (() => {
+                    switch(id){
+                        case 1:
+                        return growthCapitalImg
+                        case 2:
+                        return refinancingImage
+                        case 3:
+                        return IPOImage
+                        case 4:
+                        return ESGImage
+                        case 5:
+                        return projectFinancingImage
+                        case 6:
+                        return impactFinancingImage
+
+                    }
+                })()
+
+               return ( <ProductView 
+                    key={id}
+                    hexaPosition={hexaPosition}
+                    isText={isText}
+                    imageCircle={(
+                        <>
+                            <Image src={image} alt={name} className={imageStyle}/>
+                            <div className={gradientStyle.concat(" w-[60%] h-full absolute -top-1 ")}></div>
+                        </>
+                    )}
+                    isImage={isImage}
+                    text={text}
+                />
+               )
+            })
+        }
+        </div>
+
+        <div className="hidden md:gap-y-20 md:py-20 md:grid md:grid-cols-3 md:place-content-center md:mb-5">
+        {
+
+
+            productViewDataAlt.map(({id, hexaPosition, isText, imageStyle, isImage, text, name, gradientStyle}) => {
                 const image = (() => {
                     switch(id){
                         case 1:

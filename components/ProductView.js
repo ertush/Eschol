@@ -1,4 +1,4 @@
-import Hexagon from '../components/Hexagon'
+import {Hexagon} from '../components/Hexagon'
 
 
 function ProductView({hexaPosition, isText, imageCircle, isImage, text}) {

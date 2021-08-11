@@ -1,7 +1,7 @@
-import Image from "next/image"
 import bgImage from "../assets/images/bg-city.jpg"
 import NavHeader from "./NavHeader";
 import {useRouter} from "next/router"
+import Heading from "./Heading";
 
 
 function Header() {
@@ -14,21 +14,14 @@ function Header() {
 
       {/* Image banner  */}
 
-      <div className="relative h-[400px]">
-        <Image
-          layout="fill"
-          objectFit="cover"
-          src={bgImage}
-          alt="banner-image"
-        />
-        <div className="z-10 w-full h-[400px] bg-primary opacity-20"></div>
-        <div className="absolute inset-0 z-20 w-full h-full opacity-1 p-5 bg-gradient-to-t from-secondary via-transparent to-transparent">
-          <div className="flex flex-col gap-y-4 md:gap-y-8 items-center justify-between mt-10">
-            <div className="text-center md:w-1/2">
+      <Heading content={
+        (
+          <>
+              <div className="text-center md:w-1/2">
               <h2 className="mb-2 text-3xl md:text-5xl font-bold capitalize text-primary">
                 <span className="text-gray-200">Who</span> We Are ?
               </h2>
-              <span className="text-md font-normal md:text-lg text-gray-200">
+              <span className="text-md font-semibold md:text-lg text-gray-200">
               We are a consulting company registered in Kenya and we 
               specialize in arranging for Corporate Financing. We help our 
               clients source for funding from a large pool of vetted overseas 
@@ -46,11 +39,14 @@ function Header() {
                 Learn More
               </button>
             </div>
-
-        
-          </div>
-        </div>
-      </div>
+          </>
+        )
+      }
+        bgImage={bgImage}
+        h={'h-[400px]'}
+        contentSpacing={'gap-y-4 md:gap-y-8'}
+        hImage={'h-auto md:h-[400px]'}
+      />
     </div>
   );
 }
