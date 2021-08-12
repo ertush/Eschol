@@ -10,7 +10,7 @@ function Footer() {
 
   return (
     <div className="flex flex-col h-auto w-full bg-primary ">
-      <div className="h-auto grid gap-y-1 md:gap-y-4 grid-cols-1 md:grid-cols-4 bg-primary pt-8 p-4 place-content-center ">
+      <div className="h-auto grid gap-y-1 md:gap-y-4 grid-cols-1 md:grid-cols-4 bg-primary pt-8 md:pt-20 p-4 place-content-center ">
         <div className="relative h-40 w-40 self-center justify-self-center md:self-start">
           <Image src={logo} alt={"logo"} layout="fill" objectFit="cover" />
         </div>
@@ -89,7 +89,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-y-2  mb-4 self-center justify-self-center md:mb-0 md:justify-start md:items-start md:self-start md:justify-self-center">
+        <div className="flex flex-col gap-y-2  mb-4 self-center justify-self-center md:mb-0 md:justify-start md:items-start md:self-start md:justify-self-center pr-4">
           <span
             onClick={() => setIsDropDownContact(!isDropDownContact)}
             className="cursor-pointer md:cursor-text md:inline flex justify-center items-center text-lg font-semibold text-center md:text-left text-secondary"
