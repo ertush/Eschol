@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-function Heading({content, bgImage, contentSpacing, h, hImage}) {
+function Heading({content, bgImage, contentSpacing, h, hImage, imageGradient}) {
     return (
         <div className={hImage.concat(" relative")}>
         <Image
@@ -8,11 +8,12 @@ function Heading({content, bgImage, contentSpacing, h, hImage}) {
           objectFit="cover"
           src={bgImage}
           alt="banner-image"
+          className="md:rounded-b-[40px]"
         />
 
-        <div className={h.concat(" z-10 w-full bg-primary opacity-20")}></div>
-        <div className="absolute inset-0 z-20 w-full h-full opacity-1 p-5 bg-gradient-to-t from-secondary via-transparent to-transparent">
-          <div className={contentSpacing.concat(" flex flex-col items-center justify-between mt-10")}>
+        <div className={h.concat(" z-10 w-full bg-primary md:rounded-b-[40px] shadow-3xl")}></div>
+        <div className={imageGradient?.concat(" absolute inset-0 z-20 w-full h-full opacity-1 p-5")}>
+          <div className={contentSpacing.concat(" flex flex-col items-center justify-between md:justify-center mt-10")}>
             {content}
           </div>
         </div>

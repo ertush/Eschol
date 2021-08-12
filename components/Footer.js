@@ -1,7 +1,8 @@
-import Image from "next/image";
-import { useState } from "react";
-import logo from "../assets/images/escl-logo-no-bg-white.png";
-import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/solid";
+import Image from "next/image"
+import Link from "next/link"
+import { useState } from "react"
+import logo from "../assets/images/escl-logo-no-bg-white.png"
+import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/solid"
 
 function Footer() {
   const [isDropDownContact, setIsDropDownContact] = useState(true);
@@ -9,12 +10,12 @@ function Footer() {
 
   return (
     <div className="flex flex-col h-auto w-full bg-primary ">
-      <div className="h-auto grid gap-y-1 md:gap-y-4 grid-cols-1 md:grid-cols-3 bg-primary pt-8 px-4 py-4 gap-x-3 place-content-center ">
+      <div className="h-auto grid gap-y-1 md:gap-y-4 grid-cols-1 md:grid-cols-4 bg-primary pt-8 p-4 place-content-center ">
         <div className="relative h-40 w-40 self-center justify-self-center md:self-start">
           <Image src={logo} alt={"logo"} layout="fill" objectFit="cover" />
         </div>
 
-        <div className="flex flex-col gap-y-2 mb-4 justify-self-center  md:mb-0 md:justify-start md:items-start md:self-start md:justify-self-center ">
+        <div className="flex flex-col gap-y-2 mb-4 justify-self-center md:mb-0 md:justify-start md:items-start md:self-start md:justify-self-center ">
           <span
             onClick={() => setIsDropDownSF(!isDropDownSF)}
             className="cursor-pointer md:cursor-text md:inline flex justify-center items-center text-lg font-semibold text-center md:text-left text-secondary"
@@ -82,13 +83,66 @@ function Footer() {
             </li>
             <li>
               <p className="text-md font-thin text-secondary">
-                Consolata.Ndungu@escholventures.co.ke
+                info@escholventures.co.ke
               </p>
             </li>
           </ul>
         </div>
 
-        <div className="flex justify-evenly items-center h-auto py-3 pr-2 md:justify-start md:space-x-4 self-center md:justify-self-center md:self-start">
+        <div className="flex flex-col gap-y-2  mb-4 self-center justify-self-center md:mb-0 md:justify-start md:items-start md:self-start md:justify-self-center">
+          <span
+            onClick={() => setIsDropDownContact(!isDropDownContact)}
+            className="cursor-pointer md:cursor-text md:inline flex justify-center items-center text-lg font-semibold text-center md:text-left text-secondary"
+          >
+            Menu
+            {isDropDownContact ? (
+              <ChevronRightIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
+            ) : (
+              <ChevronDownIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
+            )}
+          </span>
+
+          <ul
+            className={`${
+              isDropDownContact ? "hidden" : ""
+            } text-center md:text-left  md:flex md:flex-col list-none gap-y-2`}
+          >
+            <li>
+              <span className="text-md font-thin text-secondary underline hover:no-underline">
+                <Link href="/">
+                  Home
+                </Link>
+              </span>
+              
+            </li>
+            <li>
+            <span className="text-md font-thin text-secondary underline hover:no-underline">
+             <Link href="/contacts">
+              Contacts
+              </Link>
+            </span>
+            
+            </li>
+            <li>
+            <span className="text-md font-thin text-secondary underline hover:no-underline"> 
+               <Link href="/about">
+               About
+              </Link>
+            </span>
+             
+            </li>
+            <li>
+            <span className="text-md font-thin text-secondary underline hover:no-underline">
+            <Link href="/products">
+               Products
+              </Link>
+            </span>
+            
+            </li>
+          </ul>
+        </div>
+
+        <div className="flex justify-evenly items-center h-auto py-3 pr-6 md:justify-start md:space-x-4 self-center md:justify-self-center md:self-start">
           <a href="#" className="w-8 h-8 text-secondary">
             <svg
               className="icon line"
@@ -176,6 +230,12 @@ function Footer() {
               ></line>
             </svg>
           </a>
+        </div>
+        <div className="hidden md:inline col-span-2 w-full h-auto">
+                <form action="api/message" method="POST" className="h-auto md:justify-end flex md:items-center md:p-1 w-[100%]">
+                  <input className="text-secondary  w-[72%] mr-5 rounded-lg h-[50px] border-none bg-secondary-accent focus:ring-2 ring-gray-400 outline-none p-2" type="text" placeholder="write to us..." />
+                  <button className="flex justify-center items-center rounded-lg bg-secondary w-auto h-[50px] p-4 text-secondary-accent hover:bg-primary-accent hover:text-secondary" type="submit">submit</button>
+                </form>
         </div>
       </div>
 

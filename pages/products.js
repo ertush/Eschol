@@ -94,9 +94,9 @@ function Products() {
         <Heading content={
         (
           <>
-              <div className="text-center md:w-1/2">
+              <div className="text-center md:w-1/2 md:my-40">
               <h2 className="mb-2 text-3xl md:text-5xl md:my-10 font-bold capitalize text-primary md:text-gray-200">
-                <span className="text-secondary md:text-gray-400">Our</span> Products
+                <span className="text-secondary md:text-primary">Our</span> Products
               </h2>
               <span className="text-md font-semibold md:text-lg text-gray-200">
                 Our  products range from Corporate Funding, Retail Loans, Promoter Funding, 
@@ -108,19 +108,18 @@ function Products() {
           </>
         )
       }
-        h={'h-[300px] md:h-[400px]'}
+        h={'h-[300px] md:h-[800px] opacity-30'}
         bgImage={bgImage}
+        imageGradient={''}
         contentSpacing={"gap-y-8 md:gap-y-8"}
-        hImage={' h-auto md:h-full'}
+        hImage={' h-auto md:h-[800px]'}
       />
-
-        {/* End Heading */}
 
 
         {/* Products Section */}
 
 
-        <div className="flex flex-col justify-center items-center w-[80%] pt-6 mx-auto h-auto space-y-10 pb-10 md:hidden">
+        <div className="flex flex-col justify-center items-center w-[80%] pt-6 mx-auto h-auto space-y-10 md:hidden">
         {
 
 
@@ -202,8 +201,6 @@ function Products() {
         }
         </div>
         
-
-  
 
         {/* Footer */}
         <Footer/>

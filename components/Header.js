@@ -17,11 +17,11 @@ function Header() {
       <Heading content={
         (
           <>
-              <div className="text-center md:w-1/2">
-              <h2 className="mb-2 text-3xl md:text-5xl font-bold capitalize text-primary">
+              <div className="text-center md:w-1/2 md:my-40">
+              <h2 className="mb-3 text-3xl md:text-5xl font-bold capitalize text-primary">
                 <span className="text-gray-200">Who</span> We Are ?
               </h2>
-              <span className="text-md font-semibold md:text-lg text-gray-200">
+              <span className="text-md font-semibold md:text-xl text-gray-200">
               We are a consulting company registered in Kenya and we 
               specialize in arranging for Corporate Financing. We help our 
               clients source for funding from a large pool of vetted overseas 
@@ -29,8 +29,7 @@ function Header() {
               </span>
             </div>
 
-          
-            <div className="w-full h-auto flex justify-around mt-5 md:w-1/2 md:flex md:items-center md:justify-around">
+            <div className="w-full h-auto flex justify-around mt-5 md:w-1/2 md:flex md:mt-0 md:items-center md:justify-around">
               <button onClick={() => router.push('/products')} className="p-3 border-2 border-gray-200 rounded-lg text-gray-200 w-30 hover:bg-gray-200 hover:text-primary">
                 Our Products
               </button>
@@ -43,9 +42,10 @@ function Header() {
         )
       }
         bgImage={bgImage}
-        h={'h-[400px]'}
-        contentSpacing={'gap-y-4 md:gap-y-8'}
-        hImage={'h-auto md:h-[400px]'}
+        imageGradient={'bg-gradient-to-t from-secondary via-transparent to-transparent'}
+        h={'h-[400px] md:h-[800px] opacity-20'}
+        contentSpacing={'gap-y-4 md:gap-y-1'}
+        hImage={'h-auto md:h-[800px]'}
       />
     </div>
   );
