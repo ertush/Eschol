@@ -19,13 +19,10 @@ function Header() {
           <>
               <div className="text-center md:w-1/2 md:my-40">
               <h2 className="mb-3 text-3xl md:text-5xl font-bold capitalize text-primary">
-                <span className="text-gray-200">Who</span> We Are ?
+                <span className="text-gray-200">Who</span> we are
               </h2>
               <span className="text-md font-semibold md:text-xl text-gray-200">
-              We are a consulting company registered in Kenya and we 
-              specialize in arranging for Corporate Financing. We help our 
-              clients source for funding from a large pool of vetted overseas 
-              based investors and funders
+               A consulting company registered in Kenya and we specializes in arranging for Corporate Financing.
               </span>
             </div>
 

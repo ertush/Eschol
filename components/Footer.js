@@ -2,15 +2,16 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import logo from "../assets/images/escl-logo-no-bg-white.png"
-import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/solid"
+import { ChevronRightIcon, ChevronDownIcon, DeviceMobileIcon, GlobeAltIcon, MailIcon } from "@heroicons/react/solid"
 
 function Footer() {
   const [isDropDownContact, setIsDropDownContact] = useState(true);
   const [isDropDownSF, setIsDropDownSF] = useState(true);
+  const [isDropDownMenu, setIsDropDownMenu] = useState(true);
 
   return (
-    <div className="flex flex-col h-auto w-full bg-primary ">
-      <div className="h-auto grid gap-y-1 md:gap-y-4 grid-cols-1 md:grid-cols-4 bg-primary pt-8 md:pt-20 p-4 place-content-center ">
+    <div className="flex flex-col h-auto w-full bg-primary">
+      <div className="h-auto grid gap-y-1 md:gap-y-4 grid-cols-1 md:grid-cols-4 pt-8 md:pt-20 p-4 place-content-center ">
         <div className="relative h-40 w-40 self-center justify-self-center md:self-start">
           <Image src={logo} alt={"logo"} layout="fill" objectFit="cover" />
         </div>
@@ -31,7 +32,7 @@ function Footer() {
           <ul
             className={`${
               isDropDownSF ? "hidden" : ""
-            } text-center md:text-left md:flex md:flex-col list-none gap-y-2`}
+            } text-left md:flex md:flex-col list-none gap-y-2`}
           >
             <li>
               <p className="text-md font-thin text-secondary">
@@ -71,31 +72,38 @@ function Footer() {
           <ul
             className={`${
               isDropDownContact ? "hidden" : ""
-            } text-center md:text-left  md:flex md:flex-col list-none gap-y-2`}
+            } text-center md:text-left  md:flex md:flex-col list-none gap-y-4`}
           >
-            <li>
-              <p className="text-md font-thin text-secondary">
-                Consolata Ndungu
-              </p>
+             <li>
+              <span className="text-md font-thin text-secondary md:flex md:justify-start md:gap-x-2 md:items-start">
+                <MailIcon className="hidden md:inline md:w-5 md:h-5 mt-1 md:text-secondary" />
+                <p className="md:w-[100px]">Consolata.Ndungu@escholventures.co.ke, Daniel.Mwangi@scholventures.co.ke</p>
+              </span>
             </li>
+
             <li>
-              <p className="text-md font-thin text-secondary">+254 705497588</p>
+              <span className="text-md font-thin text-secondary md:flex md:justify-start md:gap-x-2 md:items-start">
+                <DeviceMobileIcon className="hidden md:inline md:w-5 md:h-5 mt-1 md:text-secondary" />
+                <p>+254 705497588 | +254 721361753</p>
+              </span>
             </li>
+        
             <li>
-              <p className="text-md font-thin text-secondary">
-                info@escholventures.co.ke
-              </p>
+              <span className="text-md font-thin text-secondary md:flex md:justify-start md:gap-x-2 md:items-start">
+                <GlobeAltIcon className="hidden md:inline md:w-5 md:h-5 mt-1 md:text-secondary"/>
+                <p>www.escholventures.co.ke</p>
+              </span>
             </li>
           </ul>
         </div>
 
         <div className="flex flex-col gap-y-2  mb-4 self-center justify-self-center md:mb-0 md:justify-start md:items-start md:self-start md:justify-self-center pr-4">
           <span
-            onClick={() => setIsDropDownContact(!isDropDownContact)}
+            onClick={() => setIsDropDownMenu(!isDropDownMenu)}
             className="cursor-pointer md:cursor-text md:inline flex justify-center items-center text-lg font-semibold text-center md:text-left text-secondary"
           >
             Menu
-            {isDropDownContact ? (
+            {isDropDownMenu ? (
               <ChevronRightIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
             ) : (
               <ChevronDownIcon className="md:hidden ml-2 w-5 h-5 text-secondary" />
@@ -104,8 +112,8 @@ function Footer() {
 
           <ul
             className={`${
-              isDropDownContact ? "hidden" : ""
-            } text-center md:text-left  md:flex md:flex-col list-none gap-y-2`}
+              isDropDownMenu ? "hidden" : ""
+            }  text-left  md:flex md:flex-col list-none gap-y-2`}
           >
             <li>
               <span className="text-md font-thin text-secondary underline hover:no-underline">
@@ -143,7 +151,7 @@ function Footer() {
         </div>
 
         <div className="flex justify-evenly items-center h-auto py-3 pr-6 md:justify-start md:space-x-4 self-center md:justify-self-center md:self-start">
-          <a href="#" className="w-8 h-8 text-secondary">
+          <a href="#" className="md:inline md:w-8 md:h-8 text-secondary">
             <svg
               className="icon line"
               width="48"
@@ -169,7 +177,7 @@ function Footer() {
             </svg>
           </a>
 
-          <a href="#" className="w-8 h-8 text-secondary">
+          <a href="#" className="md:inline md:w-8 md:h-8 text-secondary">
             <svg
               className="icon line"
               width="48"
@@ -193,7 +201,7 @@ function Footer() {
             </svg>
           </a>
 
-          <a href="#" className="w-8 h-8 text-secondary">
+          <a href="#" className="md:inline md:w-8 md:h-8 text-secondary">
             <svg
               className="icon line"
               width="48"
@@ -234,7 +242,8 @@ function Footer() {
         <div className="hidden md:inline col-span-2 w-full h-auto">
                 <form action="api/message" method="POST" className="h-auto md:justify-end flex md:items-center md:p-1 w-[100%]">
                   <input className="text-secondary  w-[72%] mr-5 rounded-lg h-[50px] border-none bg-secondary-accent focus:ring-2 ring-gray-400 outline-none p-2" type="text" placeholder="write to us..." />
-                  <button className="flex justify-center items-center rounded-lg bg-secondary w-auto h-[50px] p-4 text-secondary-accent hover:bg-primary-accent hover:text-secondary" type="submit">submit</button>
+                  <button className="flex justify-center items-center rounded-lg bg-secondary w-auto h-[50px] p-4 text-secondary-accent hover:bg-primary-accent hover:text-secondary" type="submit">
+                  send</button>
                 </form>
         </div>
       </div>

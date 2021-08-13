@@ -10,7 +10,10 @@ function About() {
 
         {/* Card */}
 
-        <Card content={
+        <Card
+         bgCardStyle={'md:bg-secondary-accent md:to-blue-700  -skew-y-3 -rotate-3'}
+         cardStyle={'md:bg-gray-100 md:shadow-lg'}
+         content={
           (
             <>
                 <h3 className=" text-primary pb-5 mt-5 font-bold text-5xl h-auto w-full flex justify-center">
