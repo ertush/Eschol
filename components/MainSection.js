@@ -18,7 +18,7 @@ function MainSection() {
           description={
             <ul className="list-none text-left space-y-3">
               <span className=" flex space-x-2 justify-center md:justify-start items-start">
-                <HexagonAlt h={"md:h-2"} w={"hidden md:inline md:w-2 md:mt-2"} />
+                <HexagonAlt hexaStyles={'md:h-2 hidden md:inline md:w-2 md:mt-2'} />
                 <p className="w-[90%] h-auto align-text-top">
                   To achieve our clients’ objectives while maintaining high
                   business ethics.
@@ -26,14 +26,14 @@ function MainSection() {
               </span>
 
               <span className="flex space-x-2 justify-center md:justify-start items-start">
-                <HexagonAlt h={"md:h-2"} w={"hidden md:inline md:w-2 md:mt-2"} />
+                <HexagonAlt hexaStyles={'md:h-2 hidden md:inline md:w-2 md:mt-2'}/>
                 <p className="w-[90%] h-auto align-text-top">
                   Developing long lasting relationships with our clients.
                 </p>
               </span>
 
               <span className="flex space-x-2 justify-center md:justify-start items-start">
-                <HexagonAlt h={"md:h-2"} w={"hidden md:inline md:w-2 md:mt-2"} />
+                <HexagonAlt hexaStyles={'md:h-2 hidden md:inline md:w-2 md:mt-2'}/>
                 <p className="w-[90%] h-auto align-text-top">
                   Sharing knowledge and available opportunities relevant to our
                   clients.
@@ -53,10 +53,10 @@ function MainSection() {
           description={(
             // flex flex-col items-center  md:items-center gap-y-2 md:gap-y-3 list-none
             <ul className="list-none flex flex-col items-center md:items-start space-y-3">
-              <li className="flex justify-between items-start space-x-2"><HexagonAlt h={"md:h-2"} w={"hidden md:inline md:w-2 md:mt-2"} /><p className="text-md font-semibold">Honesty</p></li>
-              <li className="flex justify-between items-start space-x-2"><HexagonAlt h={"md:h-2"} w={"hidden md:inline md:w-2 md:mt-2"} /><p className="text-md font-semibold">Transparency</p></li>
-              <li className="flex justify-between items-start space-x-2"><HexagonAlt h={"md:h-2"} w={"hidden md:inline md:w-2 md:mt-2"} /><p className="text-md font-semibold">Consistency</p></li>
-              <li className="flex justify-between items-start space-x-2"><HexagonAlt h={"md:h-2"} w={"hidden md:inline md:w-2 md:mt-2"} /><p className="text-md font-semibold">No cure no pay</p></li>
+              <li className="flex justify-between items-start space-x-2"><HexagonAlt hexaStyles={'md:h-2 hidden md:inline md:w-2 md:mt-2'}/><p className="text-md font-semibold">Honesty</p></li>
+              <li className="flex justify-between items-start space-x-2"><HexagonAlt hexaStyles={'md:h-2 hidden md:inline md:w-2 md:mt-2'}/><p className="text-md font-semibold">Transparency</p></li>
+              <li className="flex justify-between items-start space-x-2"><HexagonAlt hexaStyles={'md:h-2 hidden md:inline md:w-2 md:mt-2'}/><p className="text-md font-semibold">Consistency</p></li>
+              <li className="flex justify-between items-start space-x-2"><HexagonAlt hexaStyles={'md:h-2 hidden md:inline md:w-2 md:mt-2'}/><p className="text-md font-semibold">No cure no pay</p></li>
             </ul>
           )}
         />
@@ -70,7 +70,7 @@ function MainSection() {
           cardStyles={""}
           description={
             <span className="flex space-x-2 justify-center md:justify-start items-start">
-              <HexagonAlt h={"md:h-2"} w={"hidden md:inline md:w-2 md:mt-2"} />
+              <HexagonAlt hexaStyles={'md:h-2 hidden md:inline md:w-2 md:mt-2'}/>
               <p className="w-[90%] h-auto align-text-top">
                 To be a leading player in the growth of Africa economies through
                 impact financing

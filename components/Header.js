@@ -26,7 +26,7 @@ function Header() {
               </span>
             </div>
 
-            <div className="w-full h-auto flex justify-around mt-5 md:w-1/2 md:flex md:mt-0 md:items-center md:justify-around">
+              <div className="w-full h-auto flex justify-around mt-5 md:w-1/2 md:flex md:mt-0 md:items-center md:justify-around">
               <button onClick={() => router.push('/products')} className="p-3 border-2 border-gray-200 rounded-lg text-gray-200 w-30 hover:bg-gray-200 hover:text-primary">
                 Our Products
               </button>
@@ -38,9 +38,10 @@ function Header() {
           </>
         )
       }
+
         bgImage={bgImage}
         imageGradient={'bg-gradient-to-t from-secondary via-transparent to-transparent'}
-        h={'h-[400px] md:h-[800px] opacity-20'}
+        h={'h-[340px] md:h-[800px] opacity-40'}
         contentSpacing={'gap-y-4 md:gap-y-1'}
         hImage={'h-auto md:h-[800px]'}
       />

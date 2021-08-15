@@ -77,7 +77,7 @@ function Footer() {
              <li>
               <span className="text-md font-thin text-secondary md:flex md:justify-start md:gap-x-2 md:items-start">
                 <MailIcon className="hidden md:inline md:w-5 md:h-5 mt-1 md:text-secondary" />
-                <p className="md:w-[100px]">Consolata.Ndungu@escholventures.co.ke, Daniel.Mwangi@scholventures.co.ke</p>
+                <p>enquiries@scholventures.co.ke</p>
               </span>
             </li>
 
@@ -115,13 +115,22 @@ function Footer() {
               isDropDownMenu ? "hidden" : ""
             }  text-left  md:flex md:flex-col list-none gap-y-2`}
           >
+             
             <li>
               <span className="text-md font-thin text-secondary underline hover:no-underline">
-                <Link href="/">
-                  Home
+                <Link href="/services">
+                  Investment
                 </Link>
               </span>
               
+            </li>
+            <li>
+            <span className="text-md font-thin text-secondary underline hover:no-underline">
+            <Link href="/products">
+               Products
+              </Link>
+            </span>
+            
             </li>
             <li>
             <span className="text-md font-thin text-secondary underline hover:no-underline">
@@ -139,14 +148,7 @@ function Footer() {
             </span>
              
             </li>
-            <li>
-            <span className="text-md font-thin text-secondary underline hover:no-underline">
-            <Link href="/products">
-               Products
-              </Link>
-            </span>
-            
-            </li>
+          
           </ul>
         </div>
 
@@ -239,11 +241,12 @@ function Footer() {
             </svg>
           </a>
         </div>
-        <div className="hidden md:inline col-span-2 w-full h-auto">
-                <form action="api/message" method="POST" className="h-auto md:justify-end flex md:items-center md:p-1 w-[100%]">
-                  <input className="text-secondary  w-[72%] mr-5 rounded-lg h-[50px] border-none bg-secondary-accent focus:ring-2 ring-gray-400 outline-none p-2" type="text" placeholder="write to us..." />
-                  <button className="flex justify-center items-center rounded-lg bg-secondary w-auto h-[50px] p-4 text-secondary-accent hover:bg-primary-accent hover:text-secondary" type="submit">
-                  send</button>
+        
+        <div className="hidden md:inline md:col-start-3 md:col-span-2 md:w-auto md:h-auto">
+                <form action="api/message" method="POST" className="h-auto md:justify-start grid gap-x-2 grid-cols-3 md:items-center md:p-1 w-[100%] ">
+                  <input className="text-secondary col-span-2 w-[90%] ml-10 rounded-lg h-[50px] border-none bg-secondary-accent focus:ring-2 ring-gray-400 outline-none p-2" type="text" placeholder="Enter email to recieve updates from Eschol Ventures" />
+                  <button className="flex justify-center items-center rounded-lg bg-secondary w-[45%] h-[50px] py-4 px-8 text-secondary-accent hover:bg-primary-accent hover:text-secondary" type="submit">
+                  subscribe</button>
                 </form>
         </div>
       </div>

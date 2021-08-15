@@ -22,9 +22,7 @@ function Products() {
             id:1,
             name:'growth-capital-image',
             hexaPosition: '-right-10',
-            isText: false,
-            isImage: true,
-            text: 'growth capital',
+            text: 'growth-capital',
             imageStyle:'rounded-l-full',
             gradientStyle:'bg-gradient-to-l from-secondary to-transparent right-0'
         },
@@ -32,9 +30,7 @@ function Products() {
             id:2,
             name:'refinancing-image',
             hexaPosition: '-left-10',
-            isText: false,
-            isImage: true,
-            text: 'company refinancing',
+            text: 'company-refinancing',
             imageStyle:'rounded-r-full',
             gradientStyle:'bg-gradient-to-r from-secondary to-transparent left-0'
         },  
@@ -42,8 +38,6 @@ function Products() {
             id:3,
             name:'IPO-image',
             hexaPosition: '-right-10',
-            isText: false,
-            isImage: true,
             text: 'IPO',
             imageStyle:'rounded-l-full',
             gradientStyle:'bg-gradient-to-l from-secondary to-transparent right-0'
@@ -52,8 +46,6 @@ function Products() {
             id:4,
             name:'ESG-image',
             hexaPosition: '-left-10',
-            isText: false,
-            isImage: true,
             text: 'ESG',
             imageStyle:'rounded-r-full',
             gradientStyle:'bg-gradient-to-r from-secondary to-transparent left-0'
@@ -62,9 +54,7 @@ function Products() {
             id:5,
             name:'project-financing-image',
             hexaPosition: '-right-10',
-            isText: false,
-            isImage: true,
-            text: 'Project Financing',
+            text: 'project-financing',
             imageStyle:'rounded-l-full',
             gradientStyle:'bg-gradient-to-l from-secondary to-transparent right-0'
         },
@@ -72,9 +62,7 @@ function Products() {
             id:6,
             name:'impact-financing-image',
             hexaPosition: '-left-10',
-            isText: false,
-            isImage: true,
-            text: 'Impact Financing',
+            text: 'impact-financing',
             imageStyle:'rounded-r-full',
             gradientStyle:'bg-gradient-to-r from-secondary to-transparent left-0'
         }
@@ -108,7 +96,7 @@ function Products() {
           </>
         )
       }
-        h={'h-[300px] md:h-[800px] opacity-30'}
+        h={'h-[300px] md:h-[800px] opacity-40'}
         bgImage={bgImage}
         imageGradient={''}
         contentSpacing={"gap-y-8 md:gap-y-8"}
@@ -119,11 +107,10 @@ function Products() {
         {/* Products Section */}
 
 
-        <div className="flex flex-col justify-center items-center w-[80%] pt-6 mx-auto h-auto space-y-10 md:hidden">
+        <div className="flex flex-col justify-center items-center w-[80%] py-9 mx-auto h-auto space-y-10 md:hidden">
         {
 
-
-            productViewData.map(({id, hexaPosition, isText, imageStyle, isImage, text, name, gradientStyle}) => {
+            productViewData.map(({id, hexaPosition, imageStyle, text, name, gradientStyle}) => {
                 const image = (() => {
                     switch(id){
                         case 1:
@@ -142,17 +129,17 @@ function Products() {
                     }
                 })()
 
+                {/* {hexaPosition, imageCircle, text */}
+
                return ( <ProductView 
                     key={id}
                     hexaPosition={hexaPosition}
-                    isText={isText}
                     imageCircle={(
                         <>
                             <Image src={image} alt={name} className={imageStyle}/>
                             <div className={gradientStyle.concat(" w-[60%] h-full absolute -top-1 ")}></div>
                         </>
                     )}
-                    isImage={isImage}
                     text={text}
                 />
                )
@@ -162,7 +149,6 @@ function Products() {
 
         <div className="hidden md:gap-y-20 md:py-20 md:grid md:grid-cols-3 md:place-content-center md:mb-5">
         {
-
 
             productViewDataAlt.map(({id, hexaPosition, isText, imageStyle, isImage, text, name, gradientStyle}) => {
                 const image = (() => {
@@ -186,14 +172,12 @@ function Products() {
                return ( <ProductView 
                     key={id}
                     hexaPosition={hexaPosition}
-                    isText={isText}
                     imageCircle={(
                         <>
                             <Image src={image} alt={name} className={imageStyle}/>
                             <div className={gradientStyle.concat(" w-[60%] h-full absolute -top-1 ")}></div>
                         </>
                     )}
-                    isImage={isImage}
                     text={text}
                 />
                )

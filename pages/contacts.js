@@ -21,12 +21,12 @@ function Contacts() {
                         </h3>
 
                         <div className="w-full m-4 h-full bg-white md:bg-transparent  md:shadow-lg border md:border-gray-200 md:rounded-lg mx-auto pb-6 md:pb-0 md:flex">
-                        <div className="w-full h-auto mx-auto bg-secondary-accent  md:w-[30%] md:rounded-tl-lg md:rounded-bl-lg ">
+                        <div className="w-full h-auto mx-auto bg-secondary-accent  md:w-[40%] md:rounded-tl-lg md:rounded-bl-lg ">
                             <ul className="grid grid-cols-1 w-[90%] md:items-start mx-auto gap-y-4 py-9">
                             <li>
                                 <span className="text-md font-thin text-secondary flex justify-start gap-x-2 items-start">
-                                    <MailIcon className="md:inline w-9 h-9  mb-2 md:mb-1 md:text-secondary" />
-                                    <p>Consolata.Ndungu@escholventures..., Daniel.Mwangi@scholventures.co.ke</p>
+                                    <MailIcon className="md:inline sm:hidden w-5 h-5 mt-1 md:mt-0 md:text-secondary" />
+                                    <p>enquiries@scholventures.co.ke</p>
                                 </span>
                                 </li>
 

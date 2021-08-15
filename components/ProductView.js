@@ -1,7 +1,7 @@
 import {Hexagon} from '../components/Hexagon'
 
 
-function ProductView({hexaPosition, isText, imageCircle, isImage, text}) {
+function ProductView({hexaPosition, imageCircle, text}) {
     return (
       <div>
     
@@ -11,13 +11,14 @@ function ProductView({hexaPosition, isText, imageCircle, isImage, text}) {
             <div className="relative ">
             {imageCircle}
             </div>
+
+            {/* {hexaStyles, imageSrc, text, textStyles} */}
           
             {/* hexagon */}
             <Hexagon
-              hexaPosition={hexaPosition}
-              isImage={!isImage}
-              isText={!isText}
+              hexaStyles={hexaPosition}
               text={text}
+              textStyles={'capitalize text-6xl font-semibold text-secondary y-42'}
             />
           </div>
       </div>

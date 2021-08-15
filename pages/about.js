@@ -16,7 +16,7 @@ function About() {
          content={
           (
             <>
-                <h3 className=" text-primary pb-5 mt-5 font-bold text-5xl h-auto w-full flex justify-center">
+                <h3 className=" text-primary pb-5 mt-16 font-bold text-5xl h-auto w-full flex justify-center">
                    About
                 </h3>
                 <div className="px-5 pb-5 md:pb-0 flex-grow">
