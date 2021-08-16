@@ -84,10 +84,10 @@ function Products() {
           <>
               <div className="text-center md:w-1/2 md:my-40">
               <h2 className="mb-2 text-3xl md:text-5xl md:my-10 font-bold capitalize text-primary md:text-gray-200">
-                <span className="text-secondary md:text-primary">Our</span> Products
+                <span className="text-secondary md:text-amber">Our</span> Products
               </h2>
               <span className="text-md font-semibold md:text-lg text-gray-200">
-                Our  products range from Corporate Funding, Retail Loans, Promoter Funding, 
+                range from Corporate Funding, Retail Loans, Promoter Funding, 
                 International Funding, Project Funding, Loan Restructuring 
                 Subsidies, to Private Equity & Venture Capital.
               </span>

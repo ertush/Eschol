@@ -18,16 +18,16 @@ function Header() {
         (
           <>
               <div className="text-center md:w-1/2 md:my-40">
-              <h2 className="mb-3 text-3xl md:text-5xl font-bold capitalize text-primary">
-                <span className="text-gray-200">Who</span> we are
+              <h2 className="mb-5 text-3xl md:text-5xl font-bold capitalize text-primary">
+                <span className="text-gray-200">We</span> are 
               </h2>
               <span className="text-md font-semibold md:text-xl text-gray-200">
-               A consulting company registered in Kenya and we specializes in arranging for Corporate Financing.
+               a consulting company registered in Kenya and we specializes in arranging for Corporate Financing.
               </span>
             </div>
 
-              <div className="w-full h-auto flex justify-around mt-5 md:w-1/2 md:flex md:mt-0 md:items-center md:justify-around">
-              <button onClick={() => router.push('/products')} className="p-3 border-2 border-gray-200 rounded-lg text-gray-200 w-30 hover:bg-gray-200 hover:text-primary">
+              <div className="w-full h-auto flex justify-around mt-5 md:w-1/2 md:flex md:-mt-28 md:items-start md:justify-around">
+              <button onClick={() => router.push('/products')} className="p-3 border-2 order-gray-200 rounded-lg text-gray-200 w-30 hover:bg-gray-200 hover:text-primary">
                 Our Products
               </button>
 
