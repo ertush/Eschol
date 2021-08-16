@@ -4,10 +4,18 @@ import Image from 'next/image'
 import investmentImage from '../assets/images/impact-financing.jpeg'
 import { Hexagon } from "../components/Hexagon"
 import { ArrowNarrowRightIcon, ArrowNarrowDownIcon, ArrowNarrowLeftIcon } from "@heroicons/react/solid"
+import Head from "next/head"
 
 
 function Services() {
     return (
+        <>
+        <Head>
+            <title>Eschol Ventures | Investments </title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <div className="h-auto bg-secondary">
         <NavHeader />
 
@@ -153,6 +161,7 @@ function Services() {
 
         <Footer/>
         </div>
+        </>
     )
 }
 

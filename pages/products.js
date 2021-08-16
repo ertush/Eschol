@@ -10,6 +10,7 @@ import impactFinancingImage from '../assets/images/impact-financing-rsz.jpg'
 import projectFinancingImage from '../assets/images/project-financing-rsz.jpg'
 import ProductView from '../components/ProductView'
 import bgImage from '../assets/images/kicc.jpg'
+import Head from "next/head"
 
 
 
@@ -72,6 +73,13 @@ function Products() {
     const productViewDataAlt = [productViewData[0], productViewData[2], productViewData[4], productViewData[1], productViewData[3], productViewData[5]];
 
     return (
+        <>
+        <Head>
+            <title>Eschol Ventures | Products </title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <div className="h-auto w-full bg-secondary">
         {/* Header */}
         <NavHeader />
@@ -96,11 +104,11 @@ function Products() {
           </>
         )
       }
-        h={'h-[300px] md:h-[800px] opacity-40'}
+        h={'h-[300px] md:h-[600px] opacity-40'}
         bgImage={bgImage}
         imageGradient={''}
         contentSpacing={"gap-y-8 md:gap-y-8"}
-        hImage={' h-auto md:h-[800px]'}
+        hImage={' h-auto md:h-[600px]'}
       />
 
 
@@ -189,6 +197,7 @@ function Products() {
         {/* Footer */}
         <Footer/>
         </div>
+        </>
     )
 }
 

@@ -41,9 +41,9 @@ function Header() {
 
         bgImage={bgImage}
         imageGradient={'bg-gradient-to-t from-secondary via-transparent to-transparent'}
-        h={'h-[340px] md:h-[800px] opacity-40'}
+        h={'h-[340px] md:h-[600px] opacity-40'}
         contentSpacing={'gap-y-4 md:gap-y-1'}
-        hImage={'h-auto md:h-[800px]'}
+        hImage={'h-auto md:h-[600px]'}
       />
     </div>
   );

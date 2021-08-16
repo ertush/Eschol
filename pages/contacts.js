@@ -2,10 +2,18 @@ import NavHeader from "../components/NavHeader";
 import Footer from "../components/Footer"
 import Card from "../components/Card"
 import {DeviceMobileIcon, GlobeAltIcon, MailIcon } from "@heroicons/react/solid"
+import Head from "next/head";
 
 
 function Contacts() {
     return (
+        <>
+         <Head>
+        <title>Eschol Ventures | Contacts </title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <div className="h-auto bg-gray-200 md:bg-secondary flex flex-col justify-evenly md:justify-start items-center">
         <NavHeader />
 
@@ -88,6 +96,7 @@ function Contacts() {
 
         <Footer/>
         </div>
+        </>
     )
 }
 
