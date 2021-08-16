@@ -77,7 +77,7 @@ function Footer() {
              <li>
               <span className="text-md font-thin text-secondary md:flex md:justify-start md:gap-x-2 md:items-start">
                 <MailIcon className="hidden md:inline md:w-5 md:h-5 mt-1 md:text-secondary" />
-                <p>enquiries@scholventures.co.ke</p>
+                <p>enquiries@escholventures.co.ke</p>
               </span>
             </li>
 

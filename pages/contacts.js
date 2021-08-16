@@ -34,7 +34,7 @@ function Contacts() {
                             <li>
                                 <span className="text-md font-thin text-secondary flex justify-start gap-x-2 items-start">
                                     <MailIcon className="md:inline sm:hidden w-5 h-5 mt-1 md:mt-0 md:text-secondary" />
-                                    <p>enquiries@scholventures.co.ke</p>
+                                    <p>enquiries@escholventures.co.ke</p>
                                 </span>
                                 </li>
 
