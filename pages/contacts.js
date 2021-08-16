@@ -10,7 +10,7 @@ function Contacts() {
         <>
          <Head>
         <title>Eschol Ventures | Contacts </title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -29,7 +29,7 @@ function Contacts() {
                         </h3>
 
                         <div className="w-full m-4 h-full bg-white md:bg-transparent  md:shadow-lg border md:border-gray-200 md:rounded-lg mx-auto pb-6 md:pb-0 md:flex">
-                        <div className="w-full h-auto mx-auto bg-secondary-accent  md:w-[40%] md:rounded-tl-lg md:rounded-bl-lg ">
+                        <div className="w-full h-auto rounded-t-lg mx-auto shadow-xl bg-secondary-accent  md:w-[40%] md:rounded-tl-lg md:rounded-bl-lg ">
                             <ul className="grid grid-cols-1 w-[90%] md:items-start mx-auto gap-y-4 py-9">
                             <li>
                                 <span className="text-md font-thin text-secondary flex justify-start gap-x-2 items-start">
@@ -54,8 +54,8 @@ function Contacts() {
                             </ul>
                         </div>
                         
-                        <div className="md:flex md:flex-grow mx-auto md:bg-gray-100 md:rounded-tr-lg md:rounded-br-lg">
-                        <form className="pt-9 grid grid-cols-1 gap-y-4 mb-10 mx-auto place-content-center w-[90%] md:grid-cols-2 md:px-5 md:pb-2 md:flex-grow md:gap-x-4 md:w-[600px]" action="">
+                        <div className="md:flex md:flex-grow mx-auto shadow-xl rounded-b-lg md:bg-gray-100 md:rounded-tr-lg md:rounded-br-lg">
+                        <form className="pt-9 grid grid-cols-1 gap-y-4 mb-10 mx-auto place-content-center w-[90%] rounded-b-lg md:grid-cols-2 md:px-5 md:pb-2 md:flex-grow md:gap-x-4 md:w-[600px]" action="">
                             <div className="flex flex-col gap-y-1">
                                 <label className="text-md font-normal text-primary" htmlFor="first-name">First name</label>
                                 <input className="h-11 rounded-lg bg-secondary p-2 text-primary outline-none focus:ring-4 ring-secondary-accent ring-opacity-40" name="first-name" type="text" />

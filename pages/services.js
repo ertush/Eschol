@@ -12,7 +12,7 @@ function Services() {
         <>
         <Head>
             <title>Eschol Ventures | Investments </title>
-            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <meta name="viewport" content="initial-scale=1, width=device-width" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -22,7 +22,7 @@ function Services() {
         {/* Investment Parameters  */}
 
         <div className="grid grid-cols-1 w-full gap-2 mx-auto h-auto place-content-start md:px-0 md:py-0">
-            <div className="relative w-full md:h-[800px] h-[1300px]">
+            <div className="relative w-full md:h-[800px] h-[550px]">
                 <Image className="w-full absolute filter blur-[1px] md:rounded-none" src={investmentImage} layout="fill" objectFit="cover"/>
                 <div className=" z-10 absolute w-full filter blur rounded-bl-3xl rounded-tl-3xl bg-gradient-to-r from-secondary-accent via-secondary-accent to-transparent opacity-70 left-0 h-full "></div>
             
@@ -86,7 +86,7 @@ function Services() {
 
                 {/* Investment Process */}
                 
-                <div className="z-20 w-full absolute top-[520px] left-2 md:top-0 md:left-[1000px] flex flex-col gap-y-1 md:gap-x-6 justify-center items-start md:ml-5">
+                <div className="hidden md:flex z-20 w-full absolute top-[520px] left-2 md:top-0 md:left-[1000px]  flex-col gap-y-1 md:gap-x-6 justify-center items-start md:ml-5">
                     <h4 className="w-full text-xl md:text-4xl font-bold md:font-extrabold text-white text-center md:text-start md:w-1/4 md:mr-10 mt-2 md:my-5">Investment Process</h4>
                         
 
