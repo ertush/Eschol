@@ -32,7 +32,7 @@ function NavHeader() {
           className="text-xl font-semibold text-primary hidden md:inline flex-grow"
         >
           {/* Ventures color can be text-secondary or text-gray-400  */}
-          Eschol <span className="text-gray-400">Ventures</span>
+          Eschol <span className="text-gray-400">Ventures Limited</span>
         </a>
 
         <div className="hidden md:inline-flex space-x-10 pr-3">
@@ -41,7 +41,7 @@ function NavHeader() {
 
         <a href="/" className="text-xl font-semibold text-primary md:hidden">
           {/* Ventures color can be text-secondary or text-gray-400  */}
-          Eschol <span className="text-gray-400">Ventures</span>
+          Eschol <span className="text-gray-400">Ventures Limited</span>
         </a>
 
         {!btnMenuActive ? (

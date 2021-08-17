@@ -9,7 +9,7 @@ function About() {
       <>
 
       <Head>
-        <title>Eschol Ventures | About </title>
+        <title>Eschol Ventures Ltd | About </title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
     </Head>
@@ -25,7 +25,7 @@ function About() {
          content={
           (
             <>
-                <h3 className=" text-primary pb-5 mt-16 font-bold text-5xl h-auto w-full flex justify-center">
+                <h3 className=" text-primary pb-5 mt-16 md:mt-4 font-bold text-5xl h-auto w-full flex justify-center">
                    About
                 </h3>
                 <div className="px-5 pb-5 md:pb-0 flex-grow">

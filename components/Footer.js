@@ -13,7 +13,8 @@ function Footer() {
     <div className="flex flex-col h-auto w-full bg-primary">
       <div className="h-auto grid gap-y-1 md:gap-y-4 grid-cols-1 md:grid-cols-4 pt-8 md:pt-20 p-4 place-content-center ">
         <div className="relative h-40 w-40 self-center justify-self-center md:self-start">
-          <Image src={logo} alt={"logo"} layout="fill" objectFit="cover" />
+          <a href="/"> <Image src={logo} alt={"logo"} layout="fill" objectFit="cover" /></a>
+          
         </div>
 
         <div className="flex flex-col gap-y-2 mb-4 justify-self-center md:mb-0 md:justify-start md:items-start md:self-start md:justify-self-center ">
@@ -243,8 +244,8 @@ function Footer() {
         </div>
         
         <div className="hidden md:inline md:col-start-3 md:col-span-2 md:w-auto md:h-auto">
-                <form action="api/message" method="POST" className="h-auto md:justify-start grid gap-x-2 grid-cols-3 md:items-center md:p-1 w-[100%] ">
-                  <input className="text-secondary col-span-2 w-[90%] ml-10 rounded-lg h-[50px] border-none bg-secondary-accent focus:ring-2 ring-gray-400 outline-none p-2" type="text" placeholder="Enter email to recieve updates from Eschol Ventures" />
+                <form action="api/message?subscription=true" method="POST" className="h-auto md:justify-start grid gap-x-2 grid-cols-3 md:items-center md:p-1 w-[100%] ">
+                  <input name="email" className="text-secondary col-span-2 w-[90%] ml-10 rounded-lg h-[50px] border-none bg-secondary-accent focus:ring-2 ring-gray-400 outline-none p-2" type="text" placeholder="Enter email to recieve updates from Eschol Ventures" />
                   <button className="flex justify-center items-center rounded-lg bg-secondary w-[45%] h-[50px] py-4 px-8 text-secondary-accent hover:bg-primary-accent hover:text-secondary" type="submit">
                   subscribe</button>
                 </form>

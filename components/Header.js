@@ -22,7 +22,7 @@ function Header() {
                 <span className="text-gray-200">We</span> are 
               </h2>
               <span className="text-md font-semibold md:text-xl text-gray-200">
-               a consulting company registered in Kenya and we specializes in arranging for Corporate Financing.
+               a consulting company registered in Kenya and we specialise in arranging for Corporate Financing.
               </span>
             </div>
 
