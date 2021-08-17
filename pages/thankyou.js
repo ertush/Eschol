@@ -13,7 +13,7 @@ function ThankYou() {
   return (
     <>
       <Head>
-        <title>Eschol Ventures Ltd | ThankYou </title>
+        <title>Eshcol Ventures Ltd | ThankYou </title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

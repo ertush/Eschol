@@ -78,7 +78,7 @@ function Footer() {
              <li>
               <span className="text-md font-thin text-secondary md:flex md:justify-start md:gap-x-2 md:items-start">
                 <MailIcon className="hidden md:inline md:w-5 md:h-5 mt-1 md:text-secondary" />
-                <p>enquiries@escholventures.co.ke</p>
+                <p>enquiries@eshcolventures.co.ke</p>
               </span>
             </li>
 
@@ -92,7 +92,7 @@ function Footer() {
             <li>
               <span className="text-md font-thin text-secondary md:flex md:justify-start md:gap-x-2 md:items-start">
                 <GlobeAltIcon className="hidden md:inline md:w-5 md:h-5 mt-1 md:text-secondary"/>
-                <p>www.escholventures.co.ke</p>
+                <p>www.eshcolventures.co.ke</p>
               </span>
             </li>
           </ul>
@@ -154,7 +154,7 @@ function Footer() {
         </div>
 
         <div className="flex justify-evenly items-center h-auto py-3 pr-6 md:justify-start md:space-x-4 self-center md:justify-self-center md:self-start">
-          <a href="#" className="md:inline md:w-8 md:h-8 text-secondary">
+          <a href="https://twitter.com/EshcolVentures" className="md:inline md:w-8 md:h-8 text-secondary">
             <svg
               className="icon line"
               width="48"
@@ -180,7 +180,7 @@ function Footer() {
             </svg>
           </a>
 
-          <a href="#" className="md:inline md:w-8 md:h-8 text-secondary">
+          <a href="https://www.facebook.com/Eshcol-Ventures-Limited-100187999054782" className="md:inline md:w-8 md:h-8 text-secondary">
             <svg
               className="icon line"
               width="48"
@@ -204,7 +204,7 @@ function Footer() {
             </svg>
           </a>
 
-          <a href="#" className="md:inline md:w-8 md:h-8 text-secondary">
+          <a href="https://www.instagram.com/eshcolventures" className="md:inline md:w-8 md:h-8 text-secondary">
             <svg
               className="icon line"
               width="48"
@@ -245,7 +245,7 @@ function Footer() {
         
         <div className="hidden md:inline md:col-start-3 md:col-span-2 md:w-auto md:h-auto">
                 <form action="api/message?subscription=true" method="POST" className="h-auto md:justify-start grid gap-x-2 grid-cols-3 md:items-center md:p-1 w-[100%] ">
-                  <input name="email" className="text-secondary col-span-2 w-[90%] ml-10 rounded-lg h-[50px] border-none bg-secondary-accent focus:ring-2 ring-gray-400 outline-none p-2" type="text" placeholder="Enter email to recieve updates from Eschol Ventures" />
+                  <input name="email" className="text-secondary col-span-2 w-[90%] ml-10 rounded-lg h-[50px] border-none bg-secondary-accent focus:ring-2 ring-gray-400 outline-none p-2" type="text" placeholder="Enter email to recieve updates from Eshcol Ventures" />
                   <button className="flex justify-center items-center rounded-lg bg-secondary w-[45%] h-[50px] py-4 px-8 text-secondary-accent hover:bg-primary-accent hover:text-secondary" type="submit">
                   subscribe</button>
                 </form>
@@ -255,7 +255,7 @@ function Footer() {
       <div className="w-[90%] rounded h-[1px] bg-secondary mx-auto md:hidden "></div>
       <span className="text-md mx-4 font-thin text-secondary md:mx-auto my-4 text-center">
         {" "}
-        Eschol Ventures ltd All Rights Reserved &copy;{" "}
+        Eshcol Ventures ltd All Rights Reserved &copy;{" "}
         {`${(() => new Date().getFullYear())()}`} Made with ❤ by{" "}
         <a
           href="https://eric-mutua.vercel.app"

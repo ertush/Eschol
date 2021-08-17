@@ -35,15 +35,14 @@ async function main(from , to, subject ,text, html="<br/>") {
 
 export default async function messageAPI(req, res) {
   
-  // console.log({query: req.query, body: req.body, method: req.method})
-  // res.status(200).redirect(redirectUrl)
 
   const {email, subject, message} = req.body
+  // let redirectUrl = (() => subscription !== undefined ? `/thankyou?subscription=${subscription}` : "/thankyou?sent=true" )(); 
   // const { subscription } = req.query
 
   let redirectUrl
 
-  // let redirectUrl = (() => subscription !== undefined ? `/thankyou?subscription=${subscription}` : "/thankyou?sent=true" )(); 
+
 
   try {
     const resp = await main(

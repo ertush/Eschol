@@ -11,7 +11,7 @@ function Services() {
     return (
         <>
         <Head>
-            <title>Eschol Ventures Ltd | Investments </title>
+            <title>Eshcol Ventures Ltd | Investments </title>
             <meta name="viewport" content="initial-scale=1, width=device-width" />
             <link rel="icon" href="/favicon.ico" />
         </Head>

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="h-screen">
       <Head>
-        <title>Eschol Ventures Ltd </title>
+        <title>Eshcol Ventures Ltd </title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
 

@@ -75,7 +75,7 @@ function Products() {
     return (
         <>
         <Head>
-            <title>Eschol Ventures Ltd | Products </title>
+            <title>Eshcol Ventures Ltd | Products </title>
             <meta name="viewport" content="initial-scale=1, width=device-width" />
             <link rel="icon" href="/favicon.ico" />
         </Head>

@@ -43,7 +43,7 @@ function Contacts() {
     return (
         <>
          <Head>
-        <title>Eschol Ventures Ltd | Contacts </title>
+        <title>Eshcol Ventures Ltd | Contacts </title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -68,7 +68,7 @@ function Contacts() {
                             <li>
                                 <span className="text-md font-thin text-secondary flex justify-start gap-x-2 items-start">
                                     <MailIcon className="md:inline sm:hidden w-5 h-5 mt-1 md:mt-0 md:text-secondary" />
-                                    <p>enquiries@escholventures.co.ke</p>
+                                    <p>enquiries@eshcolventures.co.ke</p>
                                 </span>
                                 </li>
 
@@ -82,7 +82,7 @@ function Contacts() {
                                 <li>
                                 <span className="text-md font-thin text-secondary flex justify-start gap-x-2 items-start">
                                     <GlobeAltIcon className="md:inline sm:hidden w-5 h-5 mt-1 md:mt-0 md:text-secondary"/>
-                                    <p>www.escholventures.co.ke</p>
+                                    <p>www.eshcolventures.co.ke</p>
                                 </span>
                                 </li>
                             </ul>
