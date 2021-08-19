@@ -7,12 +7,12 @@ import { ArrowNarrowRightIcon, ArrowNarrowDownIcon, ArrowNarrowLeftIcon } from "
 import Head from "next/head"
 
 
-function Services() {
+function Investment() {
     return (
         <>
         <Head>
             <title>Eshcol Ventures Ltd | Investments </title>
-            <meta name="viewport" content="initial-scale=1, width=device-width" />
+            <meta name="viewport" content="initial-scale=0.8, width=device-width" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -22,20 +22,20 @@ function Services() {
         {/* Investment Parameters  */}
 
         <div className="grid grid-cols-1 w-full gap-2 mx-auto h-auto place-content-start md:px-0 md:py-0">
-            <div className="relative w-full md:h-[800px] h-[550px]">
+            <div className="relative w-full md:h-[900px] h-[1280px]">
                 <Image className="w-full absolute filter blur-[1px] md:rounded-none" src={investmentImage} layout="fill" objectFit="cover"/>
                 <div className=" z-10 absolute w-full filter blur rounded-bl-3xl rounded-tl-3xl bg-gradient-to-r from-secondary-accent via-secondary-accent to-transparent opacity-70 left-0 h-full "></div>
             
                 {/* Investment Parameters */}
 
                 <div className="z-20 absolute right-0 md:left-0 flex flex-col px-4 gap-y-2 justify-center items-start md:ml-5">
-                    <h4 className=" w-full text-xl md:text-4xl font-bold md:font-extrabold text-white text-center md:text-start md:w-1/3 md:ml-0 mt-2 md:my-5">Investment Parameters</h4>
+                    <h4 className=" w-full text-xl md:text-4xl font-bold md:font-extrabold text-white text-center md:text-start md:w-[200px] md:ml-8 mt-2 md:my-5">Investment Parameters</h4>
 
                     <ul>
 
-                        <div className="space-y-2 space-x-2 md:space-x-10 ">
+                        <div className="space-y-2 space-x-2 md:space-x-1 ">
                             <ul className="text-left">
-                                <li><p className="text-lg md:text-2xl font-semibold md:font-bold text-amber ml-4 md:ml-12">As a general Criteria</p></li>
+                                <li><p className="text-lg md:text-2xl font-semibold md:font-bold text-amber ml-4 md:ml-4">As a general Criteria</p></li>
                             </ul>
                             <li className="flex justify-between md:justify-start md:pl-2 items-start gap-x-1 text-secondary">
                             •
@@ -52,7 +52,7 @@ function Services() {
                             <ul className="text-left">
                                 <li><p className="text-lg md:text-2xl font-semibold md:font-bold text-amber ml-2 md:mt-8">Public Listed Companies</p></li>
                             </ul>
-                            <li className="flex justify-between md:justify-start md:pl-2 items-start gap-x-1 text-secondary">
+                            <li className="flex justify-start md:justify-start md:pl-2 items-start gap-x-1 text-secondary">
                             •
                             <p className="text-left text-secondary text-md md:text-xl font-semibold">
                                 Market Capitalization from USD 10M to USD 500M.
@@ -86,71 +86,96 @@ function Services() {
 
                 {/* Investment Process */}
                 
-                <div className="hidden md:flex z-20 w-full absolute top-[520px] left-2 md:top-0 md:left-[1000px]  flex-col gap-y-1 md:gap-x-6 justify-center items-start md:ml-5">
-                    <h4 className="w-full text-xl md:text-4xl font-bold md:font-extrabold text-white text-center md:text-start md:w-1/4 md:mr-10 mt-2 md:my-5">Investment Process</h4>
-                        
-
+                <div className="md:flex z-20 w-full absolute top-[450px] left-2 md:top-0 md:left-[800px]  flex-col gap-y-1 md:gap-x-6 justify-center items-start md:ml-5">
+                <h4 className="w-full text-xl md:text-4xl font-bold md:font-extrabold text-white md:text-justify md:ml-6 text-center md:w-[200px] mb-4 md:mb-5 md:mr-10 mt-2 md:my-5">Investment Process</h4>
+                    <div className="grid grid-flow-row place-content-center grid-cols-3 md:h-[720px] md:w-[400px]">
+                        <div className="relative col-start-1 left-6 row-start-1">
                         <Hexagon
-                            hexaStyles={'w-[130px] h-[130px] text-amber absolute top-20 md:top-[92px] -left-2 md:-left-80'}
+                            hexaStyles={'w-[100px] h-[100px] absolute text-amber'}
                             textStyles={'text-primary capitalize text-5xl font-semibold y-20'}
                             text={'Project-Analysis &-Preparation of-Investment-Application'}
                         />
+                        </div>
+                     
 
-                        <ArrowNarrowRightIcon className="w-8 h-8 text-amber absolute top-[127px] md:left-[150px] md:top-[138px] left-[160px]"/>
+                        <ArrowNarrowRightIcon className="w-full h-[100px] p-4 -ml-4 md:-ml-0 text-amber col-start-2 row-start-1"/>
 
+                         
+                        <div className="relative col-start-3 row-start-1">
                         <Hexagon
-                            hexaStyles={'w-[130px] h-[130px] text-amber absolute top-20 md:top-[92px] left-[175px] md:-left-32'}
+                            hexaStyles={'w-[100px] h-[100px] text-amber '}
                             textStyles={'text-primary text-5xl font-semibold y-27'}
                             text={'Confirm-Funding-Groups-to engage'}
                         />
+                        </div>
+                     
 
-                        <ArrowNarrowDownIcon className="w-8 h-8 text-amber absolute top-[215px] md:top-[228px]  md:left-[250px] left-[253px]" />
+                        <ArrowNarrowDownIcon className="w-full h-[100px] md:-ml-4 -ml-7 py-4 text-amber span col-start-3  row-start-2" />
 
-                        <Hexagon
-                            hexaStyles={'w-[130px] h-[130px] text-amber absolute top-[254px] md:top-[268px] left-[175px] md:-left-32'}
-                            textStyles={'text-primary text-5xl font-semibold y-42'}
-                            text={'Submission'}
-                        />
+                        <div className="relative col-start-3 row-start-3">
+                            <Hexagon
+                                hexaStyles={'w-[100px] h-[100px] text-amber '}
+                                textStyles={'text-primary text-5xl font-semibold y-42'}
+                                text={'Submission'}
+                            />
+                        </div>
+                       
 
-                       <ArrowNarrowLeftIcon className="w-8 h-8 text-amber absolute top-[302px] md:top-[318px] md:left-[150px] left-[160px]" />
+                       <ArrowNarrowLeftIcon className="w-full h-[100px] p-4 -ml-4 md:-ml-0 text-amber col-start-2 row-start-3" />
 
+                        
+                       <div className="relative left-6 col-start-1 row-start-3">
                        <Hexagon
-                            hexaStyles={'w-[130px] h-[130px] text-amber absolute top-[254px] md:top-[268px] -left-2 md:-left-80'}
+                            hexaStyles={'w-[100px] h-[100px] text-amber '}
                             textStyles={'text-primary capitalize text-5xl font-semibold y-26'}
                             text={'Initial-Review-and Due-Diligence'}
                         />
+                        </div>
 
-                        <ArrowNarrowDownIcon className="w-8 h-8 text-amber absolute top-[388px] md:top-[414px]  md:left-[55px] left-[68px]" />
-                
+                        <ArrowNarrowDownIcon className="w-full h-[100px] md:ml-1 -ml-1 py-4 text-amber col-start-1 row-start-4 " />
+
+                        <div className="relative col-start-1  left-6  row-start-5">
+                            <Hexagon
+                                hexaStyles={'w-[100px] h-[100px] text-amber'}
+                                textStyles={'text-primary capitalize text-5xl font-semibold y-36'}
+                                text={'Outline-Terms-Issued'}
+                            />
+                        </div>
+                    
+
+                        <ArrowNarrowRightIcon className="w-full h-[100px] p-4 -ml-4 md:-ml-0 text-amber col-start-2 row-start-5"/>
+                        
+                        <div className="relative col-start-3 row-start-5">
                         <Hexagon
-                            hexaStyles={'w-[130px] h-[130px] text-amber absolute top-[423px] md:top-[458px] -left-2 md:-left-80'}
-                            textStyles={'text-primary capitalize text-5xl font-semibold y-36'}
-                            text={'Outline-Terms-Issued'}
-                        />
-
-                        <ArrowNarrowRightIcon className="w-8 h-8 text-amber absolute top-[470px] md:top-[508px] md:left-[150px] left-[160px]"/>
-
-                        <Hexagon
-                            hexaStyles={'w-[130px] h-[130px] text-amber absolute top-[423px] md:top-[458px] left-[175px] md:-left-32'}
+                            hexaStyles={'w-[100px] h-[100px] text-amber '}
                             textStyles={'text-primary text-5xl font-semibold y-42'}
                             text={'Negotiations-& Clarification'}
                         />
+                        </div>
 
-                        <ArrowNarrowDownIcon className="w-8 h-8 text-amber absolute top-[560px] md:top-[598px]  md:left-[250px] left-[253px]" />
-              
+                        <ArrowNarrowDownIcon className="w-full h-[100px] md:-ml-4 -ml-7  py-4 text-amber col-start-3 row-start-6" />
+
+                        <div className="relative col-start-3 row-start-7">
                         <Hexagon
-                            hexaStyles={'w-[130px] h-[130px] text-amber absolute top-[600px] md:top-[638px] left-[175px] md:-left-32'}
+                            hexaStyles={'w-[100px] h-[100px] text-amber '}
                             textStyles={'text-primary text-5xl font-semibold y-36'}
                             text={'Signature of-Contracts &-Appendices'}
                         />
+                        </div>
 
-                        <ArrowNarrowLeftIcon className="w-8 h-8 text-amber absolute top-[649px] md:top-[687px]  md:left-[150px] left-[160px]" />
-             
-                        <Hexagon
-                            hexaStyles={'w-[130px] h-[130px] text-amber absolute top-[600px] md:top-[638px] -left-2 md:-left-80'}
-                            textStyles={'text-primary text-5xl font-semibold y-36'}
-                            text={'Drawdown'}
-                        />
+                        <ArrowNarrowLeftIcon className="w-full h-[100px] p-4  -ml-4 md:-ml-0 text-amber col-start-2 row-start-7" />
+
+                        
+                        <div className="relative col-start-1  left-6  row-start-7">
+                            <Hexagon
+                                hexaStyles={'w-[100px] h-[100px] text-amber'}
+                                textStyles={'text-primary text-5xl font-semibold y-36'}
+                                text={'Drawdown'}
+                            />
+                        </div>
+                       
+                    </div>
+                 
                 </div>
             </div>
 
@@ -165,4 +190,4 @@ function Services() {
     )
 }
 
-export default Services
+export default Investment

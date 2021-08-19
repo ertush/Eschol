@@ -1,4 +1,5 @@
 import NavHeader from "../components/NavHeader"
+import { useState } from "react"
 import Footer from "../components/Footer"
 import Heading from "../components/Heading"
 import Image from 'next/image'
@@ -16,24 +17,33 @@ import Head from "next/head"
 
 function Products() {
 
-    
+    const [cardHidden, setCardHidden] = useState(true)
 
     const productViewData = [
         {
             id:1,
             name:'growth-capital-image',
-            hexaPosition: '-right-10',
+            hexaPosition: `${cardHidden ? '-right-10' : '-right-14 top-[-318px]'}`,
             text: 'growth-capital',
-            imageStyle:'rounded-l-full',
-            gradientStyle:'bg-gradient-to-l from-secondary to-transparent right-0'
+            imageStyle:`${cardHidden ? 'rounded-l-full' : 'rounded-t-lg'}`,
+            cardHeight: 'h-[740px]',
+            gradientStyle:`${cardHidden ? 'bg-gradient-to-l from-secondary to-transparent right-0' : ''}`,
+            info: `Growth Capital (also known as growth equity or expansion capital) is a type of investment opportunity in relatively mature companies that are going through some transformational event in their lifecycle with potential for some dramatic growth.
+            Growth capital is utilized by businesses to subsidize the expansion of their operations, entrance into new markets, and acquisitions to boost the company’s revenues and profitability. Growth equity investors benefit from the high growth potential and moderate risk of the investments.
+            Growth equity deals generally imply minority investments. Such deals are commonly executed using preferred shares. Note that growth equity investors tend to prefer companies with low leverage or no debt at all.
+            `,
         },
         {
             id:2,
             name:'refinancing-image',
-            hexaPosition: '-left-10',
+            hexaPosition: `${cardHidden ? '-left-10' : 'top-[-318px]'}`, 
             text: 'company-refinancing',
-            imageStyle:'rounded-r-full',
-            gradientStyle:'bg-gradient-to-r from-secondary to-transparent left-0'
+            imageStyle:`${cardHidden ? 'rounded-r-full' : 'rounded-t-lg'}`,
+            cardHeight: 'h-[740px]',
+            gradientStyle:`${cardHidden ? 'bg-gradient-to-r from-secondary to-transparent left-0' : ''}`,
+            info:`Company refinancing is the process through which a company reorganizes its financial obligations by replacing or restructuring existing debts. Corporate refinancing is often done to improve a company's financial position. Through refinancing, a company can receive more favorable interest rates, improve their credit quality, and secure more favorable financing options. It can also be done while a company is in distress with the help of debt restructuring.
+            Generally, the result of a corporate refinancing is reduced monthly interest payments, more favorable loan terms, risk reduction, and access to more cash for operations and capital investment.
+            `
         },  
         {
             id:3,
@@ -72,11 +82,15 @@ function Products() {
 
     const productViewDataAlt = [productViewData[0], productViewData[2], productViewData[4], productViewData[1], productViewData[3], productViewData[5]];
 
+
+
+
+
     return (
         <>
         <Head>
             <title>Eshcol Ventures Ltd | Products </title>
-            <meta name="viewport" content="initial-scale=1, width=device-width" />
+            <meta name="viewport" content="initial-scale=0.8, width=device-width" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -109,16 +123,16 @@ function Products() {
         imageGradient={''}
         contentSpacing={"gap-y-8 md:gap-y-8"}
         hImage={' h-auto md:h-[600px]'}
-      />
+      />    
 
 
         {/* Products Section */}
 
 
-        <div className="flex flex-col justify-center items-center w-[80%] py-9 mx-auto h-auto space-y-10 md:hidden">
+        <div className={`flex flex-col justify-between items-center w-[80%] py-9 mx-auto space-y-10 h-auto md:hidden`}>
         {
 
-            productViewData.map(({id, hexaPosition, imageStyle, text, name, gradientStyle}) => {
+            productViewData.map(({handleClick, id, hexaPosition, imageStyle, text, name, gradientStyle, info, cardHeight}) => {
                 const image = (() => {
                     switch(id){
                         case 1:
@@ -140,15 +154,20 @@ function Products() {
                 {/* {hexaPosition, imageCircle, text */}
 
                return ( <ProductView 
+                    id={id}
+                    onPressCb={(state) => setCardHidden(state)}
+                    cardHeight={cardHeight}
                     key={id}
+                    handleClick={handleClick}
                     hexaPosition={hexaPosition}
                     imageCircle={(
                         <>
                             <Image src={image} alt={name} className={imageStyle}/>
-                            <div className={gradientStyle.concat(" w-[60%] h-full absolute -top-1 ")}></div>
+                            <div className={gradientStyle.concat(" w-[60%] h-full absolute -top-1")}></div>
                         </>
                     )}
                     text={text}
+                    info={info}
                 />
                )
             })
@@ -158,7 +177,7 @@ function Products() {
         <div className="hidden md:gap-y-20 md:py-20 md:grid md:grid-cols-3 md:place-content-center md:mb-5">
         {
 
-            productViewDataAlt.map(({id, hexaPosition, isText, imageStyle, isImage, text, name, gradientStyle}) => {
+            productViewDataAlt.map(({id, hexaPosition,  imageStyle, text, name, gradientStyle, info, cardHeight}) => {
                 const image = (() => {
                     switch(id){
                         case 1:
@@ -183,7 +202,7 @@ function Products() {
                     imageCircle={(
                         <>
                             <Image src={image} alt={name} className={imageStyle}/>
-                            <div className={gradientStyle.concat(" w-[60%] h-full absolute -top-1 ")}></div>
+                            <div className={gradientStyle.concat( `${cardHidden ? 'w-[60%]' : 'w-[300px]'} h-full absolute -top-1 `)}></div>
                         </>
                     )}
                     text={text}
