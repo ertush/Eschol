@@ -85,7 +85,7 @@ function ProductView({id, hexaPosition, imageCircle, text, info, onPressCb, card
     }
 
     return (
-      <div>
+      <div classNamee="flex justify-center">
     
         <div 
         className={`justify-center cursor-pointer relative ml-[16%] ${getState(clickHandler) ? 'h-auto w-[90%] md:w-[70%]' : cardHeight.concat(' ml-0 w-[300px] md:w-[400px]')} flex hover:scale-105 transform transition duration-200 ease-out`}>

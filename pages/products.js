@@ -32,7 +32,7 @@ function Products() {
             hexaPosition: `${capitalCard  ? '-right-10' : '-right-14 top-[-318px]'}`,
             text: 'growth-capital',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight: 'h-[550px] mb-28 md:mb-0',
+            cardHeight: 'h-[550px] mb-28 md:mb-0 ml-[15%]',
             gradientStyle:'',
             chevronPosition:'left-2',
             info: (() => (
@@ -49,7 +49,7 @@ function Products() {
             hexaPosition: `${refinancingCard ? '-left-10' : 'top-[-318px]'}`, 
             text: 'company-refinancing',
             imageStyle: 'rounded-t-lg shadow-xl',
-            cardHeight: 'h-[550px] mb-6 md:mb-0',
+            cardHeight: 'h-[550px] mb-6 md:mb-0 ml-[15%]',
             gradientStyle:'',
             chevronPosition:'right-2',
             info: (() => (
@@ -65,7 +65,7 @@ function Products() {
             hexaPosition: `${ipoCard  ? '-right-10' : '-right-14 top-[-318px]'}`,
             text: 'IPO',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight: 'h-[550px] mb-20 md:mb-0',
+            cardHeight: 'h-[550px] mb-20 md:mb-0 ml-[15%]',
             gradientStyle:'',
             chevronPosition:'left-2',
             info: (() => (
@@ -84,7 +84,7 @@ function Products() {
             hexaPosition: `${esgCard ? '-left-10' : 'top-[-318px]'}`, 
             text: 'ESG',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight:'h-[650px] md:h-[550px]',
+            cardHeight:'h-[650px] md:h-[550px] ml-[15%]',
             gradientStyle:'',
             chevronPosition:'right-2',
             info: (() => (
@@ -100,7 +100,7 @@ function Products() {
             hexaPosition: `${projectCard  ? '-right-10' : '-right-14 top-[-318px]'}`,
             text: 'project-financing',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight:'h-[550px] md:h-[550px]',
+            cardHeight:'h-[550px] md:h-[550px] ml-[15%]',
             gradientStyle:'',
             chevronPosition:'left-2',
             info: (() => (
@@ -116,7 +116,7 @@ function Products() {
             hexaPosition: `${impactCard ? '-left-10' : 'top-[-318px]'}`,
             text: 'impact-financing',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight:'h-[650px] md:h-[550px]',
+            cardHeight:'h-[650px] md:h-[550px] ml-[15%] md:mr-[15%]',
             gradientStyle:'',
             chevronPosition:'right-2',
             info: (() => (
@@ -136,7 +136,7 @@ function Products() {
         <>
         <Head>
             <title>Eshcol Ventures Ltd | Products </title>
-            <meta name="viewport" content="initial-scale=1, width=device-width" />
+            <meta name="viewport" content="initial-scale=0.8, width=device-width" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -175,7 +175,7 @@ function Products() {
         {/* Products Section */}
 
 
-        <div className="flex flex-col justify-center  md:text-mditems-center w-[80%] py-9 space-y-10 h-auto md:hidden">
+        <div className="flex flex-col justify-center md:text-md items-center w-[80%] py-9 space-y-10 h-auto md:hidden">
         {
 
             productViewData.map(({chevronPosition, handleClick, id, hexaPosition, imageStyle, text, name, gradientStyle, info, cardHeight}) => {
