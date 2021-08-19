@@ -10,11 +10,11 @@ function About() {
 
       <Head>
         <title>Eshcol Ventures Ltd | About </title>
-        <meta name="viewport" content="initial-scale=0.8, width=device-width" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
     </Head>
     
-      <div className="h-screen bg-secondary flex flex-col justify-evenly md:justify-start items-center">
+      <div className="h-full bg-secondary flex flex-col justify-evenly md:justify-start items-center">
         <NavHeader />
 
         {/* Card */}

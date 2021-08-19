@@ -110,7 +110,7 @@ function Investment() {
                         </div>
                      
 
-                        <ArrowNarrowDownIcon className="w-full h-[100px] md:-ml-4 -ml-7 py-4 text-amber span col-start-3  row-start-2" />
+                        <ArrowNarrowDownIcon className="w-full h-[100px] md:-ml-4 ml-[-18%] py-4 text-amber span col-start-3  row-start-2" />
 
                         <div className="relative col-start-3 row-start-3">
                             <Hexagon
@@ -132,7 +132,7 @@ function Investment() {
                         />
                         </div>
 
-                        <ArrowNarrowDownIcon className="w-full h-[100px] md:ml-1 -ml-1 py-4 text-amber col-start-1 row-start-4 " />
+                        <ArrowNarrowDownIcon className="w-full h-[100px] md:ml-1 ml-[-4%] py-4 text-amber col-start-1 row-start-4 " />
 
                         <div className="relative col-start-1  left-6  row-start-5">
                             <Hexagon
@@ -153,7 +153,7 @@ function Investment() {
                         />
                         </div>
 
-                        <ArrowNarrowDownIcon className="w-full h-[100px] md:-ml-4 -ml-7  py-4 text-amber col-start-3 row-start-6" />
+                        <ArrowNarrowDownIcon className="w-full h-[100px] md:-ml-4 ml-[-18%]   py-4 text-amber col-start-3 row-start-6" />
 
                         <div className="relative col-start-3 row-start-7">
                         <Hexagon
