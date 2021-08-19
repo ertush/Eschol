@@ -120,6 +120,11 @@ function Footer() {
           >
             <li>
               <span className="text-md font-thin text-secondary underline hover:no-underline">
+                <Link href="/about">About</Link>
+              </span>
+            </li>
+            <li>
+              <span className="text-md font-thin text-secondary underline hover:no-underline">
                 <Link href="/investment">Investment</Link>
               </span>
             </li>
@@ -133,11 +138,7 @@ function Footer() {
                 <Link href="/contacts">Contacts</Link>
               </span>
             </li>
-            <li>
-              <span className="text-md font-thin text-secondary underline hover:no-underline">
-                <Link href="/about">About</Link>
-              </span>
-            </li>
+    
           </ul>
         </div>
 

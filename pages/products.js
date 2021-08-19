@@ -65,17 +65,21 @@ function Products() {
             hexaPosition: `${ipoCard  ? '-right-10' : '-right-14 top-[-318px]'}`,
             text: 'IPO',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight: 'h-[550px] mb-20 md:mb-0 ml-[15%]',
+            cardHeight: 'h-[550px] mb-20 md:mb-0 ml-[15%] md:h-[600px]',
             gradientStyle:'',
             chevronPosition:'left-2',
             info: (() => (
-                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-32 md:pt-44 gap-y-2 overflow-y-scroll md:overflow-x-hidden w-full h-[550px] md:h-[500px]">
+                <div>
+                    <div className="flex flex-col justify-start  md:text-md md:justify-evenly  md:text-mditems-center px-4 pb-2 pt-32 md:pt-44 gap-y-2 overflow-auto md:overflow-x-hidden w-full h-[550px] md:h-[500px]">
                     <p className="text-justify text-sm md:text-md font-normal text-primary">If you are planning an IPO or are already a Publicly Listed Company (plc), you should consider a Share Subscription Facility.</p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">A share subscription facility is a legally binding commitment of equity, in which your company has an option to draw down on equity at your own discretion/desire over a period of 3 years (typically). Essentially you will be able to control the timing and the maximum amounts of the draw down.</p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Companies decide to put a structure like this in place for a variety of reasons besides actually funding, i.e., like to send a strong message to the market about their capitalization. By having the line in place today a Company can act quickly and can be better prepared to capitalize on opportunities in the marketplace.</p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Some companies take the line and put it in place yet they never intend to use it but they decide they want to benefit from the announcement to the marketplace by showing they are well funded by a recognized global investment group. We have seen companies in several markets use this legally binding commitment of equity to negotiate better conditions with banks either to refinance existing debt or to take on new debt. This structure is a complement to other sources of financing and thus generally creates positive feedback from an announcement to the market. </p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">If you are a Pre-IPO company or an already listed company trading in a liquid stock exchange and looking to raise capital in 6 to 12 months time, kindly drop us a line at <span className="text-yellow-600">enquiries@eshcolventures.co.ke</span>and learn more about the Share Subscription Facility.</p>
+                 </div>
                 </div>
+
+                
             ))()
         },
         {
