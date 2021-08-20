@@ -14,7 +14,7 @@ function NavHeader() {
   };
 
   return (
-    <div className="bg-white p-2 md:px-2 z-30 sticky top-0 h-auto w-full flex flex-col justify-center shadow-md">
+    <div className="bg-white p-2 md:px-2 z-50 sticky top-0 h-auto w-full flex flex-col justify-center shadow-md md:shadow-none">
       <div className="flex justify-between items-center h-auto w-full">
         <div className="hidden relative md:inline-flex md:h-20 md:w-20">
           <a href="/">

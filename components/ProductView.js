@@ -3,7 +3,7 @@ import {Hexagon} from '../components/Hexagon'
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/solid"
 
 
-function ProductView({id, hexaPosition, imageCircle, text, info, onPressCb, cardHeight, chevronPosition}) {
+function ProductView({id, hexaPosition, imageCircle, text, info, onPressCb, cardHeight, chevronPosition, infoPosition}) {
 
     const [hiddenCapital, setHiddenCapital] =  useState(true)
     const [hiddenRefinancing, setHiddenRefinancing] =  useState(true)
@@ -95,7 +95,7 @@ function ProductView({id, hexaPosition, imageCircle, text, info, onPressCb, card
             
             className="relative z-10">
             {imageCircle}
-            {/* <div className="z-20 w-full md:h-[200px] h-[152px] absolute top-0 rounded-t-lg bg-primary opacity-30"></div> */}
+          
             {
               chevronOpen ? 
               <ChevronRightIcon onClick={chevronClickHandler} className={`z-30 absolute hover:flex hover:justify-center hover:items-center hover:border hover:rounded-full hover:p-1 hover:border-secondary top-2 ${chevronPosition}  w-10 h-10 text-secondary`} />
@@ -106,7 +106,7 @@ function ProductView({id, hexaPosition, imageCircle, text, info, onPressCb, card
            
             </div>
 
-            {/* {hexaStyles, imageSrc, text, textStyles} */}
+  
           
             {/* hexagon */}
             <Hexagon
@@ -115,7 +115,7 @@ function ProductView({id, hexaPosition, imageCircle, text, info, onPressCb, card
               textStyles={'capitalize text-6xl font-semibold text-secondary y-42 '}
             />
 
-          <div hidden={getState(clickHandler)} className="z-0 absolute top-[196.6px] md:top-[157.2px] max-w-[400px] transition duration-200 pb-6 border-2 rounded-t-lg shadow-2xl rounded-b-lg h-auto flex justify-start">
+          <div hidden={getState(clickHandler)} className={`z-0 absolute max-w-[400px] ${infoPosition} transition duration-200 pb-6 border-2 rounded-t-lg shadow-2xl rounded-b-lg h-auto flex justify-start`}>
             {info}
           </div>
             

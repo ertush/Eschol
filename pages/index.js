@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import MainSection from '../components/MainSection'
+import Head from "next/head";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import MainSection from "../components/MainSection";
 
 export default function Home() {
   return (
@@ -10,19 +10,16 @@ export default function Home() {
         <title>Eshcol Ventures Ltd </title>
         <meta name="viewport" content="initial-scale=0.8, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
-
       </Head>
 
-    {/* header  Compoent*/}
-    <Header />
+      {/* header  Compoent*/}
+      <Header />
 
-    {/* main */}
-    <MainSection />
+      {/* main */}
+      <MainSection />
 
-    {/* footer Component */}
-    <Footer />
-    
-
+      {/* footer Component */}
+      <Footer />
     </div>
-  )
+  );
 }
