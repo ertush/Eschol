@@ -34,7 +34,7 @@ function Investment() {
             Investment Parameters
           </h2>
 
-          <div className="relative h-[280px] bg-white rounded-lg shadow-lg md:w-[30%] md:h-[300px] md:max-h-[600px]">
+          <div className="relative h-[300px] bg-white rounded-lg shadow-lg md:w-[30%] md:h-[300px] md:max-h-[600px]">
             <CheckCircleIcon className=" z-10 w-16 h-20 text-secondary-accent absolute right-[42%] -top-8" />
             <div className="absolute flex flex-col justify-evenly items-center px-8 py-8 space-y-3">
               <h3 className="text-center text-xl font-semibold text-primary pt-2">
@@ -55,7 +55,7 @@ function Investment() {
             </div>
           </div>
 
-          <div className="relative h-[220px] bg-white rounded-lg shadow-lg md:w-[30%] md:h-[300px] md:max-h-[600px]">
+          <div className="relative h-[250px] bg-white rounded-lg shadow-lg md:w-[30%] md:h-[300px] md:max-h-[600px]">
             <CheckCircleIcon className=" z-10 w-16 h-20 text-secondary-accent absolute right-[42%] -top-8" />
             <div className="absolute flex flex-col justify-evenly items-center px-8 py-8 space-y-3">
               <h3 className="text-center text-xl font-semibold text-primary pt-2">
@@ -71,7 +71,7 @@ function Investment() {
             </div>
           </div>
 
-          <div className="relative h-[168px] bg-white rounded-lg shadow-lg md:w-[30%] md:h-[300px] md:max-h-[600px]">
+          <div className="relative h-[250px] bg-white rounded-lg shadow-lg md:w-[30%] md:h-[300px] md:max-h-[600px]">
             <CheckCircleIcon className=" z-10 w-16 h-20 text-secondary-accent absolute right-[42%] -top-8" />
             <div className="absolute flex flex-col justify-evenly items-center px-8 py-8 space-y-3">
               <h3 className="text-center text-xl font-semibold text-primary pt-2">
@@ -89,10 +89,10 @@ function Investment() {
 
         {/* Investment Process */}
 
-        <h2 className="text-2xl md:text-4xl font-bold  flex justify-center text-primary md:mb-16">
-          Investment Parameters
+        <h2 className="text-2xl md:text-4xl font-bold  flex justify-center text-primary md:mb-2 md:mt-16">
+          Investment Process
         </h2>
-        <div className="bg-white rounded-lg p-8 md:p-0 shadow-lg my-8 md:my-0 flex space-x-12 md:space-x-0 justify-center items-center h-auto md:flex-col md:justify-start md:items-center md:mb-10">
+        <div className="bg-white md:bg-transparent rounded-lg md:rounded-none md:shadow-none p-8 md:p-0 shadow-lg my-8 md:my-0 flex space-x-12 md:space-x-0 justify-center items-center h-auto md:flex-col md:justify-start md:items-center md:mb-10">
           <div className="flex flex-col  justify-evenly space-y-2 items-center h-[900px] w-[100px] md:h-[350px] md:max-w-full md:flex-row md:w-full md:items-around ">
             <div
               onMouseOver={() => setStartLabel(true)}

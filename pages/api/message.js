@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer')
 
 require('dotenv').config('../../.env')
 
-async function main(from , to, subject ,text, html="<br/>") {
+async function main(from , to, subject ,text) {
   
 
   // create reusable transporter object using the default SMTP transport
@@ -26,8 +26,7 @@ async function main(from , to, subject ,text, html="<br/>") {
     from, 
     to,
     subject,
-    text,
-    html
+    text
   });
 
   return info
