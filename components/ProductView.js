@@ -88,14 +88,14 @@ function ProductView({id, hexaPosition, imageCircle, text, info, onPressCb, card
       <div classNamee="flex justify-center">
     
         <div 
-        className={`justify-center cursor-pointer relative ml-[16%] ${getState(clickHandler) ? 'h-auto w-[90%] md:w-[70%]' : cardHeight.concat(' ml-0 w-[300px] md:w-[400px]')} flex hover:scale-95 transform transition duration-200 ease-out`}>
+        className={` flex justify-center cursor-pointer relative ${getState(clickHandler) ? ' h-auto' : cardHeight.concat(' ml-0 max-w-[400px]')}  hover:scale-95 transform transition duration-200 ease-out`}>
          
             {/* banner image */}
             <div
             
             className="relative z-10">
             {imageCircle}
-            <div className="z-20 w-full md:h-[200px] h-[152px] absolute top-0 rounded-t-lg bg-primary opacity-30"></div>
+            {/* <div className="z-20 w-full md:h-[200px] h-[152px] absolute top-0 rounded-t-lg bg-primary opacity-30"></div> */}
             {
               chevronOpen ? 
               <ChevronRightIcon onClick={chevronClickHandler} className={`z-30 absolute hover:flex hover:justify-center hover:items-center hover:border hover:rounded-full hover:p-1 hover:border-secondary top-2 ${chevronPosition}  w-10 h-10 text-secondary`} />
@@ -115,7 +115,7 @@ function ProductView({id, hexaPosition, imageCircle, text, info, onPressCb, card
               textStyles={'capitalize text-6xl font-semibold text-secondary y-42 '}
             />
 
-          <div hidden={getState(clickHandler)} className="z-0 absolute top-8 w-[300px] md:w-[400px] transition duration-200 pb-6 border-2 rounded-t-lg shadow-2xl rounded-b-lg h-auto flex justify-start">
+          <div hidden={getState(clickHandler)} className="z-0 absolute top-[196.6px] md:top-[157.2px] max-w-[400px] transition duration-200 pb-6 border-2 rounded-t-lg shadow-2xl rounded-b-lg h-auto flex justify-start">
             {info}
           </div>
             

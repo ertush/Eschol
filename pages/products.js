@@ -32,11 +32,11 @@ function Products() {
             hexaPosition: `${capitalCard  ? '-right-10' : '-right-14 top-[-318px]'}`,
             text: 'growth-capital',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight: 'h-[550px] mb-28 md:mb-0 ml-[15%]',
+            cardHeight: 'h-[550px] mb-28 md:mb-8',
             gradientStyle:'',
             chevronPosition:'left-2',
             info: (() => (
-                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-32 md:pt-44 gap-y-2 overflow-scroll md:overflow-x-hidden md:overflow-y-hidden w-full h-auto">
+                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-4 md:pt-8 gap-y-2 overflow-scroll md:overflow-x-hidden md:overflow-y-hidden w-full h-auto">
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Growth Capital (also known as growth equity or expansion capital) is a type of investment opportunity in relatively mature companies that are going through some transformational event in their lifecycle with potential for some dramatic growth.</p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Growth capital is utilized by businesses to subsidize the expansion of their operations, entrance into new markets, and acquisitions to boost the company’s revenues and profitability. Growth equity investors benefit from the high growth potential and moderate risk of the investments.</p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Growth equity deals generally imply minority investments. Such deals are commonly executed using preferred shares. Note that growth equity investors tend to prefer companies with low leverage or no debt at all.</p>
@@ -49,11 +49,11 @@ function Products() {
             hexaPosition: `${refinancingCard ? '-left-10' : 'top-[-318px]'}`, 
             text: 'company-refinancing',
             imageStyle: 'rounded-t-lg shadow-xl',
-            cardHeight: 'h-[550px] mb-6 md:mb-0 ml-[15%]',
+            cardHeight: 'h-[550px] mb-6 md:mb-8',
             gradientStyle:'',
             chevronPosition:'right-2',
             info: (() => (
-                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-32 md:pt-44 gap-y-2 overflow-scroll md:overflow-x-hidden md:overflow-y-hidden w-full h-auto">
+                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-4 md:pt-8 gap-y-2 overflow-scroll md:overflow-x-hidden md:overflow-y-hidden w-full h-auto">
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Company refinancing is the process through which a company reorganizes its financial obligations by replacing or restructuring existing debts. Corporate refinancing is often done to improve a company's financial position. Through refinancing, a company can receive more favorable interest rates, improve their <a href="https://www.investopedia.com/terms/c/creditquality.asp" className="underline text-yellow-600">credit quality</a> , and secure more favorable financing options. It can also be done while a company is in distress with the help of <a href="https://www.investopedia.com/terms/d/debtrestructuring.asp" className="underline text-yellow-600">debt restructuring</a>.</p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Generally, the result of a corporate refinancing is reduced monthly interest payments, more favorable loan terms, risk reduction, and access to more cash for operations and capital investment.</p>
                 </div>
@@ -65,12 +65,12 @@ function Products() {
             hexaPosition: `${ipoCard  ? '-right-10' : '-right-14 top-[-318px]'}`,
             text: 'IPO',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight: 'h-[550px] mb-20 md:mb-0 ml-[15%] md:h-[600px]',
+            cardHeight: 'h-[550px] mb-20 md:mb-36 md:max-h-[500px] mb-64',
             gradientStyle:'',
             chevronPosition:'left-2',
             info: (() => (
                 <div>
-                    <div className="flex flex-col justify-start  md:text-md md:justify-evenly  md:text-mditems-center px-4 pb-2 pt-32 md:pt-44 gap-y-2 overflow-auto md:overflow-x-hidden w-full h-[550px] md:h-[500px]">
+                    <div className="flex flex-col justify-start  md:text-md md:justify-evenly  md:text-mditems-center px-4 pb-2 pt-4 md:pt-96 gap-y-2 overflow-auto md:overflow-x-hidden w-full h-[550px] md:h-[500px]">
                     <p className="text-justify text-sm md:text-md font-normal text-primary">If you are planning an IPO or are already a Publicly Listed Company (plc), you should consider a Share Subscription Facility.</p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">A share subscription facility is a legally binding commitment of equity, in which your company has an option to draw down on equity at your own discretion/desire over a period of 3 years (typically). Essentially you will be able to control the timing and the maximum amounts of the draw down.</p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Companies decide to put a structure like this in place for a variety of reasons besides actually funding, i.e., like to send a strong message to the market about their capitalization. By having the line in place today a Company can act quickly and can be better prepared to capitalize on opportunities in the marketplace.</p>
@@ -88,11 +88,11 @@ function Products() {
             hexaPosition: `${esgCard ? '-left-10' : 'top-[-318px]'}`, 
             text: 'ESG',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight:'h-[650px] md:h-[550px] ml-[15%]',
+            cardHeight:'h-[650px] md:h-[550px] md:mb-8',
             gradientStyle:'',
             chevronPosition:'right-2',
             info: (() => (
-                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-32 md:pt-44 gap-y-2 overflow-scroll md:overflow-x-hidden md:overflow-y-hidden w-full h-auto">
+                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-4 md:pt-8 gap-y-2 overflow-scroll md:overflow-x-hidden md:overflow-y-hidden w-full h-auto">
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Environmental, social, and governance (ESG) criteria are a set of standards for a company’s operations that socially conscious investors use to screen potential investments. Environmental criteria consider how a company performs as a steward of nature. Social criteria examine how it manages relationships with employees, suppliers, customers, and the communities where it operates. Governance deals with a company’s leadership, executive pay, <a className="underline text-yellow-600">audits</a>, <a className="underline text-yellow-600">internal controls</a>, and shareholder rights.</p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Environmental, social, and governance (ESG) criteria are an increasingly popular way for investors to evaluate companies in which they might want to invest. We assist companies with an ESG strategy secure funding from these impact investors.</p>
                 </div>
@@ -104,11 +104,11 @@ function Products() {
             hexaPosition: `${projectCard  ? '-right-10' : '-right-14 top-[-318px]'}`,
             text: 'project-financing',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight:'h-[550px] md:h-[550px] ml-[15%]',
+            cardHeight:'h-[550px] md:h-[550px] md:mb-8',
             gradientStyle:'',
             chevronPosition:'left-2',
             info: (() => (
-                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-32 md:pt-44 gap-y-2 overflow-scroll md:overflow-x-hidden md:overflow-y-hidden w-full h-auto">
+                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-4 md:pt-8 gap-y-2 overflow-scroll md:overflow-x-hidden md:overflow-y-hidden w-full h-auto">
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Project finance is the funding (financing) of long-term infrastructure, industrial projects, and public services using a non-recourse or limited recourse <a className="underline text-yellow-600">financial structure</a>. The debt and equity used to finance the project are paid back from the cash flow generated by the project.</p>
                     <p className="text-justify text-sm md:text-md font-normal text-primary">Project financing is a loan structure that relies primarily on the project's cash flow for repayment, with the project's assets, rights, and interests held as secondary collateral. Project finance is especially attractive to the private sector because companies can fund major projects <a className="underline text-yellow-600">off-balance sheet</a>.</p>
                 </div>
@@ -120,11 +120,11 @@ function Products() {
             hexaPosition: `${impactCard ? '-left-10' : 'top-[-318px]'}`,
             text: 'impact-financing',
             imageStyle:'rounded-t-lg shadow-xl',
-            cardHeight:'h-[650px] md:h-[550px] ml-[15%] md:mr-[15%]',
+            cardHeight:'h-[650px] md:h-[550px] md:mb-8',
             gradientStyle:'',
             chevronPosition:'right-2',
             info: (() => (
-                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-32 md:pt-44  gap-y-2 overflow-scroll md:overflow-x-hidden md:overflow-y-hidden w-full h-auto">
+                <div className="flex flex-col justify-start m md:text-mdd:justify-evenly  md:text-mditems-center px-4 pb-2 pt-4 md:pt-8  gap-y-2 overflow-scroll md:overflow-x-hidden md:overflow-y-hidden w-full h-auto">
                     <p className="text-justify text-sm  md:text-md font-normal text-primary">Impact investments are investments made with the intention to generate positive, measurable social and environmental impact alongside a financial return. Impact investments can be made in both emerging and developed markets, and target a range of returns from below market to market rate, depending on investors' strategic goals.</p>
                     <p className="text-justify text-sm  md:text-md font-normal text-primary">The growing impact investment market provides capital to address the world’s most pressing challenges in sectors such as sustainable agriculture, renewable energy, conservation, microfinance, and affordable and accessible basic services including housing, healthcare, and education.</p>
                 </div>
@@ -179,7 +179,7 @@ function Products() {
         {/* Products Section */}
 
 
-        <div className="flex flex-col justify-center md:text-md items-center w-[80%] py-9 space-y-10 h-auto md:hidden">
+        <div className="flex flex-col justify-center md:text-md items-center px-16 py-9 space-y-10 h-auto md:hidden">
         {
 
             productViewData.map(({chevronPosition, handleClick, id, hexaPosition, imageStyle, text, name, gradientStyle, info, cardHeight}) => {
@@ -262,7 +262,7 @@ function Products() {
         </div>
 
         {/* {id, hexaPosition, imageCircle, text, info, onPressCb, cardHeight} */}
-        <div className="hidden md:gap-y-20 md:py-20 md:grid md:grid-cols-3 md:place-content-center md:mb-5">
+        <div className="hidden md:gap-y-20 md:py-20 md:gap-x-32 p-9 md:grid md:grid-cols-3 md:place-content-center md:mb-5">
         {
 
             productViewDataAlt.map(({chevronPosition, handleClick, id, hexaPosition, imageStyle, text, name, gradientStyle, info, cardHeight}) => {
