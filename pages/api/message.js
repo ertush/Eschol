@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer')
 
 require('dotenv').config('../../.env')
 
-async function main(from , to, subject ,text) {
+async function main(from , to, subject ,text, firstName, lastName, phone) {
   
 
   // create reusable transporter object using the default SMTP transport
@@ -26,7 +26,17 @@ async function main(from , to, subject ,text) {
     from, 
     to,
     subject,
-    text
+    text: `
+          Dear Sir/Madam,
+
+          ${text}
+
+          Kind Regards
+
+          ${firstName} ${lastName}
+          ${phone}
+
+          `
   });
 
   return info
@@ -35,28 +45,54 @@ async function main(from , to, subject ,text) {
 export default async function messageAPI(req, res) {
   
 
-  const {email, subject, message} = req.body
-  // let redirectUrl = (() => subscription !== undefined ? `/thankyou?subscription=${subscription}` : "/thankyou?sent=true" )(); 
-  // const { subscription } = req.query
+  const {firstName, lastName, phone, email, subject, message} = req.body
+
+  const { subscription } = req.query
 
   let redirectUrl
 
-
-
   try {
-    const resp = await main(
-      email,
-      'enquiries@eshcolventures.co.ke', // enquiries@eshcolventures.co.ke
-      subject,
-      message 
-      )
 
-      if(resp.response.includes('OK')) 
-      {
-        redirectUrl = "/thankyou?sent=true"
-      }else{ 
-        redirectUrl = "/thankyou?sent=false"
-      }
+    if(subscription !== undefined){
+        redirectUrl = `/thankyou?subscription=${subscription}`
+
+        const resp = await main(
+          email,
+          'eromtush@gmail.com', // enquiries@eshcolventures.co.ke
+          'Subscribed to Updates from Eschol Ventures Ltd',
+          `I here by consent to receiving any news and updates from Eschol Ventures limited via this email
+           ${email}`,
+          '',
+          '',
+          '' 
+          )
+
+          if (resp.response.includes("OK")) {
+            redirectUrl = "/thankyou?subscription=true";
+          } else {
+            redirectUrl = "/thankyou?subscription=false";
+          }
+    }
+    else{
+      const resp = await main(
+        email,
+        'eromtush@gmail.com', // enquiries@eshcolventures.co.ke
+        subject,
+        message,
+        firstName,
+        lastName,
+        phone 
+        )
+
+        if (resp.response.includes("OK")) {
+          redirectUrl = "/thankyou?sent=true";
+        } else {
+          redirectUrl = "/thankyou?sent=false";
+        }
+    }
+    
+
+      
   
   } catch (error) {
     redirectUrl = "/thankyou?sent=false"

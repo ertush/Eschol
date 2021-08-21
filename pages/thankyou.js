@@ -29,10 +29,10 @@ function ThankYou() {
           content={
             <div className="flex flex-col justify-evenly items-center h-[300px] md:h-auto">
               <h3 className=" text-primary pb-5 mt-16  md:mt-4 font-bold text-5xl h-auto w-full flex justify-center">
-                {sent !== undefined ? "Thank You" : "Oops !"}
+                {sent !== undefined || subscription !== undefined ? "Thank You" : "Oops !"}
               </h3>
 
-              {sent !== undefined ? (
+              {sent !== undefined || subscription !== undefined ? (
                 <CheckCircleIcon className="w-full h-28 md:h-32 text-center text-primary py-4" />
               ) : (
                 <ExclamationCircleIcon className="w-full h-28 md:h-32 text-center text-primary py-4" />
@@ -42,19 +42,19 @@ function ThankYou() {
                   sent !== undefined ? (
                     <p className="md:text-xl w-ful h-full text-primary text-justify text-md font-medium md:leading-10 leading-8 md:w-[600px]">
                       {" "}
-                      Thank you for reaching out your sent has been sent
+                      Thank you for reaching out your message has been sent
                       successfully{" "}
                     </p>
                   ) : (
                     <p className="md:text-xl w-ful h-full text-primary text-justify text-md font-medium md:leading-10 leading-8 md:w-[600px]">
                       {" "}
-                      Encountered an error while sending your sent. Please Try
+                      Encountered an error while sending your message. Please Try
                       Again{" "}
                     </p>
                   )
                 ) : (
                   <h2 className="md:text-3xl text-xl font-semibold text-justify text-primary !!">
-                    subscription successfull
+                    Your subscription is successfull
                   </h2>
                 )}
               </div>
