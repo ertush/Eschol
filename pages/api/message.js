@@ -58,7 +58,7 @@ export default async function messageAPI(req, res) {
 
         const resp = await main(
           email,
-          'eromtush@gmail.com', // enquiries@eshcolventures.co.ke
+          'enquiries@eshcolventures.co.ke', 
           'Subscribed to Updates from Eschol Ventures Ltd',
           `I here by consent to receiving any news and updates from Eschol Ventures limited via this email
            ${email}`,
@@ -76,7 +76,7 @@ export default async function messageAPI(req, res) {
     else{
       const resp = await main(
         email,
-        'eromtush@gmail.com', // enquiries@eshcolventures.co.ke
+        'enquiries@eshcolventures.co.ke', 
         subject,
         message,
         firstName,

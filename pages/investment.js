@@ -93,13 +93,13 @@ function Investment() {
           Investment Process
         </h2>
         <div className="bg-white md:bg-transparent rounded-lg md:rounded-none md:shadow-none p-8 md:p-0 shadow-lg my-8 md:my-0 flex space-x-12 md:space-x-0 justify-center items-center h-auto md:flex-col md:justify-start md:items-center md:mb-10">
-          <div className="flex flex-col  justify-evenly space-y-2 items-center h-[900px] w-[100px] md:h-[350px] md:max-w-full md:flex-row md:w-full md:items-around ">
+          <div className="flex flex-col  justify-evenly space-y-2 items-center h-[1200px] w-[100px] md:h-[350px] md:max-w-full md:flex-row md:w-full md:items-around ">
             <div
               onMouseOver={() => setStartLabel(true)}
               className="relative w-[300px] h-[400px] "
             >
               {startLabel && (
-                <span className="hidden md:flex text-2xl font-semibold  w-[70px] h-[70px] text-center md:absolute md:left-[36%] md:top-[12%] bg-amber p-4 text-primary rounded-full justify-center items-center">
+                <span className="hidden md:flex text-md font-semibold  w-[60px] h-[60px] text-center md:absolute md:left-[30%] md:top-[12%] bg-amber p-4 text-primary rounded-full justify-center items-center">
                   start
                 </span>
               )}
@@ -148,16 +148,11 @@ function Investment() {
             </div>
             <span className="w-1 h-20 bg-gray-400 rounded-full md:transform md:hidden"></span>
             <ArrowNarrowRightIcon className="w-20 h-10 text-gray-400 hidden md:flex" />
-
+ 
             <div
               onMouseOver={() => setEndLabel(true)}
               className="relative w-[300px] h-[400px]"
             >
-              {endLabel && (
-                <span className="hidden md:flex text-2xl font-semibold text-center  w-[70px] h-[70px] md:absolute md:left-[35%] md:top-[12%] bg-secondary-accent p-2 text-secondary rounded-full justify-center items-center">
-                  end
-                </span>
-              )}
               <Hexagon
                 hexaStyles={" text-primary absolute left-[25%]"}
                 textStyles={
@@ -166,16 +161,57 @@ function Investment() {
                 text={"Outline-Terms-Issued"}
               />
             </div>
+            <span className="w-1 h-20 bg-gray-400 rounded-full md:transform md:hidden"></span>
+            <ArrowNarrowRightIcon className="w-20 h-10 text-gray-400 hidden md:flex" />
+
+            <div className="relative w-[300px] h-[400px]">
+              <Hexagon
+                hexaStyles={" text-primary absolute left-[25%]"}
+                textStyles={
+                  "text-secondary capitalize text-5xl font-semibold y-39"
+                }
+                text={"Negotiations-& Clarification"}
+              />
+            </div>
+            <span className="w-1 h-20 bg-gray-400 rounded-full md:transform md:hidden"></span>
+            <ArrowNarrowRightIcon className="w-20 h-10 text-gray-400 hidden md:flex" />
+
+            <div className="relative w-[300px] h-[400px]">
+              <Hexagon
+                hexaStyles={" text-primary absolute left-[25%]"}
+                textStyles={  
+                  "text-secondary capitalize text-5xl font-semibold y-33"
+                }
+                text={"Signature of-Contracts &-Appendices"}
+              />
+            </div>
+            <span className="w-1 h-20 bg-gray-400 rounded-full md:transform md:hidden"></span>
+            <ArrowNarrowRightIcon className="w-20 h-10 text-gray-400 hidden md:flex" />
+
+            <div className="relative w-[300px] h-[400px]">
+            {endLabel && (
+                <span className="hidden md:flex text-md font-semibold text-center  w-[60px] h-[60px] md:absolute md:left-[32%] md:top-[12%] bg-secondary-accent p-2 text-secondary rounded-full justify-center items-center">
+                  end
+                </span>
+              )}
+              <Hexagon
+                hexaStyles={" text-primary absolute left-[25%]"}
+                textStyles={
+                  "text-secondary capitalize text-5xl font-semibold y-26  "
+                }
+                text={"Drawdown"}
+              />
+            </div>
           </div>
 
-          <div className="flex flex-col h-[900px] justify-evenly items-center md:hidden">
-            <span className="text-2xl font-semibold text-center  bg-amber p-4 text-primary rounded-lg justify-center items-center">
+          <div className="flex flex-col h-[1200px] justify-evenly items-center md:hidden">
+            <span className="text-lg font-semibold text-center  bg-amber p-4 text-primary rounded-lg justify-center items-center">
               start
             </span>
 
-            <ArrowNarrowDownIcon className=" w-[80px] h-[620px] text-gray-400 " />
+            <ArrowNarrowDownIcon className=" w-[80px] h-[85%] text-gray-400 " />
 
-            <span className="text-2xl font-semibold text-center bg-secondary-accent p-4 text-secondary rounded-lg justify-center items-center">
+            <span className="text-lg font-semibold text-center bg-secondary-accent p-4 text-secondary rounded-lg justify-center items-center">
               end
             </span>
           </div>
