@@ -81,7 +81,7 @@ function Investment() {
                 Market Capitalization from USD 10M to USD 500M
               </p>
               <p className="text-left pr-8 text-md font-md text-primary">
-                Plans to raise capital within the next 6 months
+                Plans to raise capital from USD 10 Million upwards
               </p>
             </div>
           </div>
