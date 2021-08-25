@@ -41,8 +41,7 @@ function Investment() {
                 As a general criteria
               </h3>
               <p className="text-left text-md font-md text-primary">
-                Companies with plans to raise capital from USD 10M up to USD
-                2Bn. 
+                Companies with plans to raise capital from USD 10M upwards. 
               </p>
               <p className="text-left text-md font-md text-primary">
                 Companies in financial services will be considered on their own
@@ -50,7 +49,7 @@ function Investment() {
               </p>
               <p className="text-left text-md font-md text-primary">
                 For debt: Interest rate , moratorium ,securitization and loan
-                repayment period upon mutual agreement{" "}
+                repayment period upon mutual agreement.{" "}
               </p>
             </div>
           </div>
@@ -78,10 +77,10 @@ function Investment() {
                 Publicly Listed Companies
               </h3>
               <p className="text-left text-md font-md text-primary">
-                Market Capitalization from USD 10M to USD 500M
+                Market Capitalization from USD 10M upwards.
               </p>
               <p className="text-left pr-8 text-md font-md text-primary">
-                Plans to raise capital from USD 10 Million upwards
+                Plans to raise capital withthin the next 6 months.
               </p>
             </div>
           </div>
