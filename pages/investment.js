@@ -76,7 +76,7 @@ function Investment() {
               <h3 className="text-center text-xl font-semibold text-primary pt-2">
                 Publicly Listed Companies
               </h3>
-              <p className="text-left text-md font-md text-primary">
+              <p className="text-left  md:mr-[12%] text-md font-md text-primary">
                 Market Capitalization from USD 10M upwards.
               </p>
               <p className="text-left pr-8 text-md font-md text-primary">
@@ -95,7 +95,7 @@ function Investment() {
           <div className="flex flex-col  justify-evenly space-y-2 items-center h-[1200px] w-[100px] md:h-[350px] md:max-w-full md:flex-row md:w-full md:items-around ">
             <div
               onMouseOver={() => setStartLabel(true)}
-              className="relative w-[300px] h-[400px] "
+              className="relative w-[300px] md:w-[40%] h-[400px]"
             >
               {startLabel && (
                 <span className="hidden md:flex text-md font-semibold  w-[60px] h-[60px] text-center md:absolute md:left-[30%] md:top-[12%] bg-amber p-4 text-primary rounded-full justify-center items-center">
@@ -104,7 +104,7 @@ function Investment() {
               )}
 
               <Hexagon
-                hexaStyles={" text-primary absolute left-[25%]"}
+                hexaStyles={"  text-primary  absolute left-[25%]"}
                 textStyles={
                   "text-secondary capitalize text-5xl font-semibold y-20"
                 }
@@ -116,7 +116,7 @@ function Investment() {
             <span className="w-1 h-20 bg-gray-400 rounded-full md:transform md:hidden"></span>
             <ArrowNarrowRightIcon className="w-20 h-10 text-gray-400 hidden md:flex" />
 
-            <div className="relative w-[300px] h-[400px]">
+            <div className="relative w-[300px] md:w-[40%] hover:w-[60%] hover:transition hover:duration-200 hover:ease-in-out h-[400px]">
               <Hexagon
                 hexaStyles={" text-primary absolute left-[25%]"}
                 textStyles={"text-secondary text-5xl font-semibold y-27"}
@@ -126,7 +126,7 @@ function Investment() {
             <span className="w-1 h-20 bg-gray-400 rounded-full md:transform md:hidden"></span>
             <ArrowNarrowRightIcon className="w-20 h-10 text-gray-400 hidden md:flex" />
 
-            <div className="relative w-[300px] h-[400px]">
+            <div className="relative w-[300px] md:w-[40%] hover:w-[60%] hover:transition hover:duration-200 hover:ease-in-out h-[400px]">
               <Hexagon
                 hexaStyles={" text-primary absolute left-[25%]"}
                 textStyles={"text-secondary text-5xl font-semibold y-42"}
@@ -136,7 +136,7 @@ function Investment() {
             <span className="w-1 h-20 bg-gray-400 rounded-full md:transform md:hidden"></span>
             <ArrowNarrowRightIcon className="w-20 h-10 text-gray-400 hidden md:flex" />
 
-            <div className="relative w-[300px] h-[400px]">
+            <div className="relative w-[300px] md:w-[40%] hover:w-[60%] hover:transition hover:duration-200 hover:ease-in-out h-[400px]">
               <Hexagon
                 hexaStyles={" text-primary absolute left-[25%]"}
                 textStyles={
@@ -150,7 +150,7 @@ function Investment() {
  
             <div
               onMouseOver={() => setEndLabel(true)}
-              className="relative w-[300px] h-[400px]"
+              className="relative w-[300px] md:w-[40%] hover:w-[60%] hover:transition hover:duration-200 hover:ease-in-out h-[400px]"
             >
               <Hexagon
                 hexaStyles={" text-primary absolute left-[25%]"}
@@ -163,7 +163,7 @@ function Investment() {
             <span className="w-1 h-20 bg-gray-400 rounded-full md:transform md:hidden"></span>
             <ArrowNarrowRightIcon className="w-20 h-10 text-gray-400 hidden md:flex" />
 
-            <div className="relative w-[300px] h-[400px]">
+            <div className="relative w-[300px] md:w-[40%] hover:w-[60%] hover:transition hover:duration-200 hover:ease-in-out h-[400px]">
               <Hexagon
                 hexaStyles={" text-primary absolute left-[25%]"}
                 textStyles={
@@ -175,7 +175,7 @@ function Investment() {
             <span className="w-1 h-20 bg-gray-400 rounded-full md:transform md:hidden"></span>
             <ArrowNarrowRightIcon className="w-20 h-10 text-gray-400 hidden md:flex" />
 
-            <div className="relative w-[300px] h-[400px]">
+            <div className="relative w-[300px] md:w-[40%] hover:w-[60%] hover:transition hover:duration-200 hover:ease-in-out h-[400px]">
               <Hexagon
                 hexaStyles={" text-primary absolute left-[25%]"}
                 textStyles={  
@@ -187,7 +187,7 @@ function Investment() {
             <span className="w-1 h-20 bg-gray-400 rounded-full md:transform md:hidden"></span>
             <ArrowNarrowRightIcon className="w-20 h-10 text-gray-400 hidden md:flex" />
 
-            <div className="relative w-[300px] h-[400px]">
+            <div className="relative w-[300px] md:w-[40%] h-[400px]">
             {endLabel && (
                 <span className="hidden md:flex text-md font-semibold text-center  w-[60px] h-[60px] md:absolute md:left-[32%] md:top-[12%] bg-secondary-accent p-2 text-secondary rounded-full justify-center items-center">
                   end
